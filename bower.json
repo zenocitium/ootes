@@ -1,0 +1,21 @@
+{
+  "name": "ootes",
+  "description": "Company website for Ootes web apps",
+  "main": "bundle.js",
+  "authors": [
+    "Tom Ootes"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zenocitium/ootes",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
