@@ -32,6 +32,14 @@ Vue.component('home', {
       </div>\
     </div>\
   </div>\
+  <div class="section">\
+    <div class="container">\
+      <div class="row" class="text-center">\
+        <h1 class="text-center">Techniek</h1>\
+        <p class="text-center">People unite</p>\
+      </div>\
+    </div>\
+  </div>\
   ',
   data: function(){
     return {
