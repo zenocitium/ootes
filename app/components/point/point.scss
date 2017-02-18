@@ -1,0 +1,21 @@
+.point{
+  box-shadow: 0px 1px 10px #00ff9f;
+  padding: 6% 5%;
+  width: 90%;
+  border: 1px solid #00ff9f;
+  text-align: center;
+  margin: 5vh auto;
+  h4{
+    font-size: 1.4rem;
+  }
+  .icon{
+    margin: 23px auto;
+    font-size: 6rem;
+    font-weight: 400;
+    color: #65ecb9;
+    display: block;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
