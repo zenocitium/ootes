@@ -1,0 +1,41 @@
+.step{
+  max-width: 800px;
+  margin: 0 auto;
+  .circle{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border:  1px dashed black;
+    padding: 1.5rem 1.8rem;
+    background: lighten($brand-primary, 20%);
+    h1, h2, h3, h4{
+      margin-bottom: 0.2rem;
+    }
+    .icon{
+      font-size: 3.5rem;
+      margin: 0.5rem auto;
+      color: darken($brand-primary, 10%);
+      display: block;
+    }
+  }
+  .path{
+    padding: 10px 125px;
+    line {
+      stroke: rgb(0, 0, 0);
+      stroke-width: 2
+    }
+  }
+  &.odd{
+    .circle{
+      float: right;
+    }
+    .path{
+
+    }
+  }
+  &:last-child{
+    .path{
+      display: none;
+    }
+  }
+}

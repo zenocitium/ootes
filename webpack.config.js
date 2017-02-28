@@ -13,26 +13,24 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.common.js'
+      'vue$': 'vue/dist/vue.js',
+      'particles$': 'particles.js/particles.js'
     }
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.jsx?$/,
-        loader: 'eslint',
-        exclude: /node_modules/
-      }
-    ],
     eslint: {
       failOnWarning: false,
       failOnError: true
     },
     loaders: [
       {
+        test: /\.vue$/,
+        loader: 'vue'
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        loader: 'babel-loader'
       },
       {
         test: /\.scss$/i,
@@ -52,7 +50,8 @@ module.exports = {
       "window.jQuery": "jquery",
       "Tether": 'tether'
     })
-  ]
+  ],
+}
 
 function getEntrySources(sources) {
   if (process.env.NODE_ENV !== 'production') {
@@ -60,23 +59,3 @@ function getEntrySources(sources) {
   }
   return sources;
 }
-
-module.exports = {
-  entry: {
-    helloWorld: getEntrySources([
-      './js/helloworld.js'
-    ])
-  },
-  output: {
-    filename: 'public/[name].js'
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'jsx',
-        exclude: /node_modules/
-      }
-    ]
-  }
-};

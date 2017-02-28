@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.2.2/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   './node_modules/webpack-dev-server/bin/webpack-dev-server.js',
+1 verbose cli   '--progress',
+1 verbose cli   '--colors',
+1 verbose cli   '--hot' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData ./node_modules/webpack-dev-server/bin/webpack-dev-server.js
+8 silly fetchOtherPackageData ./node_modules/webpack-dev-server/bin/webpack-dev-server.js
+9 silly cache add args [ './node_modules/webpack-dev-server/bin/webpack-dev-server.js',
+9 silly cache add   null ]
+10 verbose cache add spec ./node_modules/webpack-dev-server/bin/webpack-dev-server.js
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: './node_modules/webpack-dev-server/bin/webpack-dev-server.js',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: './node_modules/webpack-dev-server/bin/webpack-dev-server.js',
+11 silly cache add   spec: '/Users/tom/Projects/ootes/node_modules/webpack-dev-server/bin/webpack-dev-server.js',
+11 silly cache add   type: 'local' }
+12 silly addLocalTarball shasum (computed) 797f61c49f9523b11658a5621ee2a04bc3ae1d6e
+13 verbose addTmpTarball /Users/tom/Projects/ootes/node_modules/webpack-dev-server/bin/webpack-dev-server.js not in flight; adding
+14 verbose correctMkdir /Users/tom/.npm correctMkdir not in flight; initializing
+15 verbose addTmpTarball validating metadata from /Users/tom/Projects/ootes/node_modules/webpack-dev-server/bin/webpack-dev-server.js
+16 verbose tar unpack /Users/tom/Projects/ootes/node_modules/webpack-dev-server/bin/webpack-dev-server.js
+17 verbose tar unpacking to /var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf
+18 silly gentlyRm /var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf is being purged
+19 verbose gentlyRm don't care about contents; nuking /var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf
+20 silly gunzTarPerm modes [ '755', '644' ]
+21 error not a package /Users/tom/Projects/ootes/node_modules/webpack-dev-server/bin/webpack-dev-server.js
+22 error addLocal Could not install /Users/tom/Projects/ootes/node_modules/webpack-dev-server/bin/webpack-dev-server.js
+23 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf/package.json'
+23 silly fetchPackageMetaData     at Error (native)
+23 silly fetchPackageMetaData  error for ./node_modules/webpack-dev-server/bin/webpack-dev-server.js { Error: ENOENT: no such file or directory, open '/var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf/package.json'
+23 silly fetchPackageMetaData     at Error (native)
+23 silly fetchPackageMetaData   errno: -2,
+23 silly fetchPackageMetaData   code: 'ENOENT',
+23 silly fetchPackageMetaData   syscall: 'open',
+23 silly fetchPackageMetaData   path: '/var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf/package.json' }
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Starting
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose stack Error: ENOENT: no such file or directory, open '/var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf/package.json'
+29 verbose stack     at Error (native)
+30 verbose cwd /Users/tom/Projects/ootes
+31 error Darwin 16.3.0
+32 error argv "/usr/local/Cellar/node/6.2.2/bin/node" "/usr/local/bin/npm" "install" "./node_modules/webpack-dev-server/bin/webpack-dev-server.js" "--progress" "--colors" "--hot"
+33 error node v6.2.2
+34 error npm  v3.9.5
+35 error path /var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf/package.json
+36 error code ENOENT
+37 error errno -2
+38 error syscall open
+39 error enoent ENOENT: no such file or directory, open '/var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf/package.json'
+40 error enoent ENOENT: no such file or directory, open '/var/folders/1p/72j8jg5j1r5fyqd2tvlyqxq80000gn/T/npm-26434-ad8bab8e/unpack-771650bf/package.json'
+40 error enoent This is most likely not a problem with npm itself
+40 error enoent and is related to npm not being able to find a file.
+41 verbose exit [ -2, true ]

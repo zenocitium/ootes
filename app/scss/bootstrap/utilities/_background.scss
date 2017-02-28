@@ -8,7 +8,9 @@
 
 @include bg-variant('.bg-white-transparent', rgba(255,255,255,0.2));
 
-@include bg-variant('.bg-green-transparent', rgba(101, 236, 185, 0.7));
+@include bg-variant('.bg-primary-transparent', rgba($brand-primary, 0.7));
+
+@include bg-variant('.bg-gray-lightest', $gray-lightest);
 
 @include bg-variant('.bg-primary', $brand-primary);
 

@@ -1,3 +1,5 @@
+import Vue from 'vue'
+
 import $ from 'jquery'
 var bootstrap = require("../node_modules/bootstrap/dist/js/bootstrap.min.js")
 
@@ -7,15 +9,16 @@ require('./scss/main.scss')
 // Icons
 require('./icons.font')
 
-// Directives
+// components
+let point = require('./components/point.vue')
+Vue.component('point', point)
 
-// Route components
-let home = require('./components/home/home')
-let projects = require('./components/projects/projects')
-let contact = require('./components/contact/contact')
+let step = require('./components/step.vue')
+Vue.component('step', step)
 
-// Elements
-let points = require('./components/point/point')
+// Import zeh router
+import router from './router'
 
-// Router
-let router = require('./router')
+const app = new Vue({
+  router
+}).$mount('#app')
