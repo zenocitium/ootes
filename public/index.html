@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Ootes Web</title>
+
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
   <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
@@ -12,28 +16,23 @@
 <body>
   <div id="app">
 
-    <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-white-transparent">
-      <nav class="container">
-        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#"><b>Ootes</b> Web</a>
-        <div class="navbar-collapse collapse" id="navbarCollapse" aria-expanded="false">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/projects">Projecten</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/contact">Contact</router-link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </nav>
+    <navbar></navbar>
+    
+    <router-view></router-view>
 
-    <div class="content">
-      <router-view></router-view>
-    </div>
+    <footer class="section section--smaller">
+      <div class="container">
+        <div class="row">
+
+          <div class="col text-center">
+            <small>Copyright © 2017 Ootes Web</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
 
   </div>
   <script src="http://localhost:8080/public/bundle.js"></script>

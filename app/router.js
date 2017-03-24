@@ -9,17 +9,23 @@ Vue.component('home', home)
 import projects from './components/projects.vue'
 Vue.component('projects', projects)
 
-import contact from './components/contact.vue'
-Vue.component('contact', contact)
+import about from './components/about.vue'
+Vue.component('about', about)
+
+import project from './components/project.vue'
+Vue.component('project', project)
+
 
 const homeTemplate = { template: '<home></home>' }
 const projectsTemplate = { template: '<projects></projects>' }
-const contactTemplate = { template: '<contact></contact>' }
+const projectTemplate = { template: '<project></project>' }
+const aboutTemplate = { template: '<about></about>' }
 
 const routes = [
   { path: '/home', component: homeTemplate },
   { path: '/projects', component: projectsTemplate },
-  { path: '/contact', component: contactTemplate },
+  { path: '/project/:name', component: projectTemplate },
+  { path: '/about', component: aboutTemplate },
   { path: '/', redirect: '/home' }
 ]
 

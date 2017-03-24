@@ -2,10 +2,12 @@
   <div v-bind:class="{ even: isEven, odd: !isEven}" class="step text-center">
     <div class="row">
       <div class="col-md-12">
-        <div class="circle rounded">
-          <h4>{{ title }}</h4>
-          <span v-bind:class="icon"></span>
-          <p><small>{{ text }}</small></p>
+        <div class="circle rounded vertical-center">
+          <div class="content">
+            <h5>{{ title }}</h5>
+            <span v-bind:class="icon"></span>
+            <p>{{ text }}</p>
+          </div>
         </div>
       </div>
     </div>

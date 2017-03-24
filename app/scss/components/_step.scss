@@ -5,17 +5,22 @@
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    border:  1px dashed black;
-    padding: 1.5rem 1.8rem;
+    // border:  1px dashed black;
+    padding: 0 2rem;
     background: lighten($brand-primary, 20%);
-    h1, h2, h3, h4{
+    h1, h2, h3, h4, h5{
+      font-weight: normal;
       margin-bottom: 0.2rem;
     }
     .icon{
       font-size: 3.5rem;
-      margin: 0.5rem auto;
+      margin: 0.5rem auto 0.5rem;
       color: darken($brand-primary, 10%);
       display: block;
+    }
+    p{
+      font-size: 0.80rem;
+      margin-bottom: 0px;
     }
   }
   .path{

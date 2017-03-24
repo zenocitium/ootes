@@ -1,0 +1,38 @@
+.intro{
+
+  #particles{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .intro-text{
+    margin: 0 auto;
+  }
+
+  .text-wrapper{
+    width: 100%;
+  }
+
+  .vertical-center{
+    height: 100%;
+  }
+
+  &.one-third{
+    #particles{
+      height: 33.33vh;
+    }
+    .container{
+      padding-top: 56px;
+      height: 33.33vh;
+    }
+  }
+
+  &.full-height{
+    .container{
+      height: 100vh;
+    }
+  }
+
+
+}

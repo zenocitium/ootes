@@ -1,0 +1,22 @@
+.project{
+  .image{
+    height: 11rem;
+  }
+  img{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .project{
+    margin: 0 0 2rem;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .project{
+    margin: 0 5rem 2rem;
+  }
+}

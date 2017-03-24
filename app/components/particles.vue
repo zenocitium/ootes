@@ -1,37 +1,21 @@
 <template>
-  <div>
-    <div class="section one-third" id="particles">
-      <div class="eye-catcher vertical-center">
-        <div class="intro-text">
-          <h4>Contact</h4>
-        </div>
-      </div>
-    </div>
+  <div class="particles" id="particles">
   </div>
 </template>
 
 <script>
-
-let particles = require('particles.js')
-
 export default {
-  name: 'contact',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
+  name: 'step',
   mounted: function() {
     initParticles()
   }
 }
 
 function initParticles(){
-
-  particlesJS("particles", {
+  let config = {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 40,
         "density": {
           "enable": true,
           "value_area": 800
@@ -48,10 +32,15 @@ function initParticles(){
         },
         "polygon": {
           "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.9,
         "random": false,
         "anim": {
           "enable": false,
@@ -65,7 +54,7 @@ function initParticles(){
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 10,
+          "speed": 40,
           "size_min": 0.1,
           "sync": false
         }
@@ -74,12 +63,12 @@ function initParticles(){
         "enable": true,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.9,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 3,
+        "speed": 6,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -96,11 +85,11 @@ function initParticles(){
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
+          "enable": true,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true
@@ -132,9 +121,10 @@ function initParticles(){
       }
     },
     "retina_detect": true
-  })
-  var count_particles, update
-  count_particles = document.querySelector('.js-count-particles')
-}
+  }
 
+  particlesJS("particles", config)
+
+  var count_particles = document.querySelector('.js-count-particles')
+}
 </script>
