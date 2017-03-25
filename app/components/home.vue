@@ -27,13 +27,11 @@
         <h1 class="text-center"><span class="icon icon-map-treasure"></span></h1>
         <h1 class="text-center">Werkwijze</h1>
         <br />
-
         <div class="row">
           <div class="container">
-            <step v-for="(step, index) in steps" :title="step.title" :icon="step.icon" :text="step.text" :index="index" ></step>
+            <step v-for="(step, index) in steps" :icon="step.icon" :text="step.text" :index="index" :key="step.title" ></step>
           </div>
         </div>
-
         <div class="block">
           <h1 class="text-center"><span class="icon icon-synchronize-3 icon-big"></span></h1>
           <p class="text-center">We werken iteratief dus we plannen zoveel feedback momenten in als wenselijk is, dit hangt natuurlijk af van de lengte van het traject.</p>
@@ -47,8 +45,10 @@
         <h1 class="text-center">Opdrachtgevers</h1>
         <p class="text-center">Wij hebben eerder samengewerkt met</p>
         <div class="row">
-          <div class="col vertical-center" v-for="client in clients">
-            <img class="client img-fluid" :src= "client.img" />
+          <div class="col vertical-center text-center" v-for="project in projects">
+            <a v-bind:href="'#/project/' + project.url">
+              <img class="client img-fluid" :src= "project.img" />
+            </a>
           </div>
         </div>
         <p class="text-center">
@@ -67,7 +67,7 @@
           </div>
           <div class="col-9">
             <h4>Framework</h4>
-            <p>Als framework voor onze projecten gebruiken wij Vue. Vue is een lichtgewicht framework dat niet teveel zijn stempel drukt op een project. Dit zorgt ervoor dat je zelf moet blijven nadenken maar ook dat een project niet teveel aan een framework vastzit. Een project kan zo ook makkelijker worden omgezet naar een ander framework als dit nodig is. Ook de herbruikbaarheid van code is een stuk makkelijker als deze niet aan een framework vastzit.</p>
+            <p>Als framework voor onze projecten gebruiken wij Vue. Vue is een lichtgewicht framework dat niet teveel zijn stempel drukt op een project. Dit zorgt ervoor dat je zelf moet blijven nadenken maar ook dat een project niet teveel aan een framework vastzit. Een project kan zo makkelijker worden omgezet naar een ander framework als dit nodig is. Ook de herbruikbaarheid van code is een stuk hoger als het project niet aan een framework vastzit.</p>
           </div>
         </div>
         <br/>
@@ -77,7 +77,7 @@
           </div>
           <div class="col-9">
             <h4>Styling</h4>
-            <p>Voor de styling gebruiken wij SASS. Deze techniek zorgt ervoor dat we variabelen kunnen gebruiken terwijl we de opmaak definiëren. De opmaak is hierdoor consistent en dit werkt door in de gebruikerservaring en de uitstraling.</p>
+            <p>Voor styling gebruiken wij SASS. Deze techniek zorgt ervoor dat we variabelen kunnen gebruiken en efficiënter kunnen werken. De opmaak is hierdoor consistenter en dit werkt door in de gebruikerservaring en de uitstraling.</p>
           </div>
         </div>
       </div>
@@ -87,6 +87,9 @@
 </template>
 
 <script>
+
+import ProjectsResource from '../services/projectsResource.js';
+const restProjectsResource = new ProjectsResource();
 
 let particles = require('particles.js')
 
@@ -98,7 +101,7 @@ export default {
         {
           title: 'Solide',
           icon: 'icon icon-cog',
-          text: 'Bij het bouwen houden wij een duidelijke structuur aan. Goed opgezette projecten zorgen ervoor dat je makkelijk veranderingen kunt doorvoeren, en kwaliteit gewaardborgd blijft. Zo wordt het project zo agile als het maar zijn kan.'
+          text: 'Bij het bouwen houden wij een duidelijke componentgebaseerde structuur aan. Goed opgezette projecten zorgen ervoor dat er makkelijk veranderingen doorgevoerd kunnen worden en kwaliteit gewaardborgd blijft. Zo wordt het project zo agile als het maar zijn kan.'
         },
         {
           title: 'Gebruiksvriendelijk',
@@ -138,14 +141,7 @@ export default {
           text: 'Als we alle functionaliteit hebben afgevinkt en wel allebei tevreden zijn met het eindresultaat leveren we op.'
         },
       ],
-      clients: [
-        {
-          img: 'img/crossover.png'
-        },
-        {
-          img: 'img/groenlinks.png'
-        }
-      ]
+      projects: restProjectsResource.getProjects()
     }
   },
 }

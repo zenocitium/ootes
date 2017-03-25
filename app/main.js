@@ -25,7 +25,6 @@ Vue.component('particles', particles)
 let about = require('./components/about.vue')
 Vue.component('about', about)
 
-
 // Import zeh router
 import router from './router'
 

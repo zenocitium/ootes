@@ -13,7 +13,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.js',
+      'vue$': 'vue/dist/vue.min.js',
       'particles$': 'particles.js/particles.js'
     }
   },
@@ -49,7 +49,12 @@ module.exports = {
       jQuery: "jquery",
       "window.jQuery": "jquery",
       "Tether": 'tether'
-    })
+    }),
+    // new webpack.DefinePlugin({
+    //   'process.env': {
+    //     NODE_ENV: '"production"'
+    //   }
+    // })
   ],
 }
 

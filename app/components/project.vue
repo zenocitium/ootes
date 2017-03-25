@@ -20,7 +20,6 @@
       </div>
     </div>
     <div class="section bg-gray-lightest">
-
       <div class="container">
         <div class="row">
           <div class="col-md-3 screenshot" v-for="screenshot in project.screenshots">

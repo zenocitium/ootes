@@ -17,50 +17,51 @@
     <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-3 vertical-center">
+          <div class="col-3">
             <img src="img/pixel-me-nobg.png" class="img-fluid bg-primary-light" alt="Vue.js">
           </div>
           <div class="col-9">
-            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voorgekomen uit de wens om zelfstandig goede platformen te bouwen voor mooie initiatieven. Door nauw samen te werken kan er snel waarde ontstaan en een idee snel tot leven komen.</p>
+            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voorgekomen uit de wens om zelfstandig platformen te bouwen voor mooie initiatieven. Door op een effectieve manier samen te werken kan een idee tot leven komen en kan er snel waarde ontstaan.</p>
+
+            <p><a href="http://ootes.io">Ootes.io</a><br>
+              <a href="#" target="_blank">tomootes@gmail.com</a><br/>
+              0623447230<br/>
+              <br/>
+              Terschelling 112 K7<br/>
+              3524AZ Utrecht<br/><br/>
+              <b>BTW</b> NL209059643B01<br/>
+              <b>KVK</b> 59479817<br/>
+              <br>
+              <b>Betalingen</b><br>
+              NL06 ASNB 0708 9079 97<br/>
+              Tnv T. Ootes </br>Onder vermelding van factuurnummer </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="section bg-gray-lightest">
-      <div class="container">
-        <h1 class="text-center">Kontakt me</h1>
-        <br>
-        <div class="row kontakt text-center">
-          <div class="col">
-            <a target="_blank" href="https://github.com/zenocitium" >
-              <span class="icon icon-logo-github"></span>
-            </a>
-          </div>
-          <div class="col">
-            <a href="mailto:tomootes@gmail.com" class="icon icon-email"></a>
-          </div>
-          <div class="col">
-            <a target="_blank" href="https://www.linkedin.com/in/tootes/" class="icon icon-logo-linkedin"></a>
+        <div class="section bg-gray-lightest">
+          <div class="container">
+            <h1 class="text-center">Kontakt me</h1>
+            <br/>
+            <h1 class="text-center"><span class="icon icon-arrow-down-1"></span></h1>
           </div>
         </div>
+
       </div>
-    </div>
+    </template>
 
-  </div>
-</template>
+    <script>
 
-<script>
+    let particles = require('particles.js')
 
-let particles = require('particles.js')
-
-export default {
-  name: 'about',
-  data () {
-    return {
-      projects: {}
+    export default {
+      name: 'about',
+      data () {
+        return {
+          projects: {}
+        }
+      }
     }
-  }
-}
 
-</script>
+    </script>

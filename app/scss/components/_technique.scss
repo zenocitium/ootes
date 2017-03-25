@@ -1,10 +1,16 @@
 .technique{
-  margin: 0 0 2rem;
-  img{
-    max-width: 70%;
-    margin: 0 auto;
-  }
+  margin-bottom: 2rem;
   p{
     margin: 0;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .technique{
+    img{
+      max-width: 70%;
+      margin: 0 auto;
+    }
   }
 }

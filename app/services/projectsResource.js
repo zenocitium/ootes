@@ -10,7 +10,13 @@ export default class ProjectsResource {
         techniques: [ 'Angular', 'SCSS', 'Node','Express','MongoDB'],
         text: 'Voor Project CrossOver bouwden we een app om procesveranderingen per afdeling inzichtelijk te maken.',
         type: 'Webapp front-end en back-end',
-        screenshots: [ 'login.png', 'home.png', 'archief.png', 'labels.png', 'bericht.png' ]
+        screenshots: [
+          'login.png',
+          'home.png',
+          'archief.png',
+          'bericht.png',
+          'labels.png',
+        ]
       },
       {
         client: 'Groenlinks',
@@ -21,14 +27,13 @@ export default class ProjectsResource {
         text: 'Voor GroenLinks bouwden we een app om deur tot deur campaigning mogelijk te maken.',
         type: 'Webapp front-end',
         screenshots: [
-          'home.png',
-          'interview.png',
-          'loading.png',
           'login.png',
-          'over.png',
+          'home.png',
+          'zoeken.png',
           'postcode.png',
           'straat.png',
-          'zoeken.png'
+          'interview.png',
+          'over.png'
         ]
       }
     ]

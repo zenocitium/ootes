@@ -20,7 +20,7 @@
           <div class="card project" v-for="project in projects">
 
             <div class="card-header vertical-center image">
-              <img class="card-img-top" :src= "project.img" :alt="project.project">
+              <img class="card-img-top img-fluid" :src= "project.img" :alt="project.project">
             </div>
 
             <div class="card-block">

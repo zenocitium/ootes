@@ -6,7 +6,7 @@
   background-color: darken($body-bg, 3%);
 }
 
-@include bg-variant('.bg-white-transparent', rgba(255,255,255,0.2));
+@include bg-variant('.bg-white-transparent', rgba(255,255,255,0.3));
 
 @include bg-variant('.bg-primary-transparent', rgba($brand-primary, 0.7));
 
