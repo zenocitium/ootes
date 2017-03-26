@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="path" v-if="isEven">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 373.458 205" enable-background="new 0 0 373.458 205" xml:space="preserve">
+          <svg class="img-fluid" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 373.458 205" enable-background="new 0 0 373.458 205" xml:space="preserve">
           <path d="M373.458,205h-1c0-4-0.246-8.236-0.732-12.154l0.992,0.002C373.209,196.806,373.458,200,373.458,205z M369.521,180.876
           c-0.977-3.848-2.208-7.669-3.659-11.358l0.93-0.366c1.467,3.729,2.711,7.591,3.698,11.479L369.521,180.876z M360.804,158.709
           c-1.9-3.476-4.043-6.87-6.367-10.089l0.811-0.586c2.349,3.253,4.514,6.683,6.434,10.195L360.804,158.709z M346.865,139.403
@@ -33,7 +33,6 @@
           C0.134,6.229,0,3,0,0h1c0,3,0.133,6.213,0.397,9.302L0.401,9.346z"/></svg>
         </div>
         <div class="path" v-if="!isEven">
-          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 373.458 205" enable-background="new 0 0 373.458 205" xml:space="preserve">
           <path d="M0.74,192.848l0.992-0.002C1.246,196.764,1,201,1,205H0C0,200,0.249,196.806,0.74,192.848z M2.969,180.63
           c0.987-3.888,2.231-7.75,3.698-11.479l0.93,0.366c-1.451,3.689-2.683,7.511-3.659,11.358L2.969,180.63z M11.777,158.23
