@@ -3,13 +3,13 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    ootes: [
-      'webpack-dev-server/client?http://localhost:8080',
-      './app/main.js',
-    ]
+    ootes: getEntrySources([
+      './app/main.js'
+    ])
   },
   output: {
-    filename: 'public/bundle.js'
+    path: 'public/',
+    filename: 'bundle.js'
   },
   resolve: {
     alias: {
@@ -50,11 +50,11 @@ module.exports = {
       "window.jQuery": "jquery",
       "Tether": 'tether'
     }),
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     NODE_ENV: '"production"'
-    //   }
-    // })
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: '"production"'
+      }
+    })
   ],
 }
 
