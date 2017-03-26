@@ -16,7 +16,8 @@
       <div class="container">
         <h3>{{ project.client }} <small class="text-muted">{{ project.type }}</small></h3>
         <p>{{ project.text }}</p>
-        <div class="badge badge-primary" v-for="technique in project.techniques">{{ technique }}</div>
+        <p><div class="badge badge-primary" v-for="technique in project.techniques">{{ technique }}</div></p>
+        <p><a v-bind:href=" project.address ">{{ project.address }}</a></p>
       </div>
     </div>
     <div class="section bg-gray-lightest">

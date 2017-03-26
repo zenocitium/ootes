@@ -22,7 +22,6 @@
           </div>
           <div class="col-9">
             <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voorgekomen uit de wens om zelfstandig platformen te bouwen voor mooie initiatieven. Door op een effectieve manier samen te werken kan een idee tot leven komen en kan er snel waarde ontstaan.</p>
-
             <p><a href="http://ootes.io">Ootes.io</a><br>
               <a href="#" target="_blank">tomootes@gmail.com</a><br/>
               0623447230<br/>
@@ -35,33 +34,33 @@
               <b>Betalingen</b><br>
               NL06 ASNB 0708 9079 97<br/>
               Tnv T. Ootes </br>Onder vermelding van factuurnummer </p>
-              </div>
             </div>
           </div>
         </div>
-
-        <div class="section bg-gray-lightest">
-          <div class="container">
-            <h1 class="text-center">Kontakt me</h1>
-            <br/>
-            <h1 class="text-center"><span class="icon icon-arrow-down-1"></span></h1>
-          </div>
-        </div>
-
       </div>
-    </template>
 
-    <script>
+      <div class="section bg-gray-lightest">
+        <div class="container">
+          <h1 class="text-center">Kontakt me</h1>
+          <br/>
+          <h1 class="text-center"><span class="icon icon-arrow-down-1"></span></h1>
+        </div>
+      </div>
 
-    let particles = require('particles.js')
+    </div>
+  </template>
 
-    export default {
-      name: 'about',
-      data () {
-        return {
-          projects: {}
-        }
+  <script>
+
+  let particles = require('particles.js')
+
+  export default {
+    name: 'about',
+    data () {
+      return {
+        projects: {}
       }
     }
+  }
 
-    </script>
+  </script>
