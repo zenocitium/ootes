@@ -60,6 +60,7 @@
 export default {
   name: 'step',
   props: {
+    key: String,
     title: String,
     icon: String,
     text: String,

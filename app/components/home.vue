@@ -29,7 +29,7 @@
         <br />
         <div class="row">
           <div class="container">
-            <step v-for="(step, index) in steps" :icon="step.icon" :text="step.text" :index="index" :key="step.title" ></step>
+            <step v-for="(step, index) in steps" :icon="step.icon" :text="step.text" :index="index" :key="step.title" :title="step.title" ></step>
           </div>
         </div>
         <div class="block">

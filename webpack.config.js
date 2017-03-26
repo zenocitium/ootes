@@ -8,8 +8,7 @@ module.exports = {
     ])
   },
   output: {
-    path: 'public/',
-    filename: 'bundle.js'
+    filename: 'public/bundle.js'
   },
   resolve: {
     alias: {
@@ -50,17 +49,19 @@ module.exports = {
       "window.jQuery": "jquery",
       "Tether": 'tether'
     }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"'
-      }
-    })
+    // new webpack.DefinePlugin({
+    //   'process.env': {
+    //     NODE_ENV: '"production"'
+    //   }
+    // })
   ],
 }
 
 function getEntrySources(sources) {
   if (process.env.NODE_ENV !== 'production') {
+    console.log('jaha?');
     sources.push('webpack-dev-server/client?http://localhost:8080');
   }
+
   return sources;
 }
