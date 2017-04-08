@@ -3,9 +3,10 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    ootes: getEntrySources([
-      './app/main.js'
-    ])
+    ootes: [
+      'webpack-dev-server/client?http://localhost:8080',
+      './app/main.js',
+    ]
   },
   output: {
     filename: 'public/bundle.js'
@@ -59,9 +60,7 @@ module.exports = {
 
 function getEntrySources(sources) {
   if (process.env.NODE_ENV !== 'production') {
-    console.log('jaha?');
     sources.push('webpack-dev-server/client?http://localhost:8080');
   }
-
   return sources;
 }
