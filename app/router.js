@@ -15,7 +15,6 @@ Vue.component('about', about)
 import project from './components/project.vue'
 Vue.component('project', project)
 
-
 const homeTemplate = { template: '<home></home>' }
 const projectsTemplate = { template: '<projects></projects>' }
 const projectTemplate = { template: '<project></project>' }

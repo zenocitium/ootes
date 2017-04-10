@@ -5,7 +5,7 @@
       <particles></particles>
       <div class="container">
         <div class="vertical-center">
-          <h2 class="intro-text text-center"><span class="icon icon-window-code-3"></span> <br/> Wij bouwen webapps en houden van Soep</h2>
+          <h2 class="intro-text text-center"><span class="icon icon-window-code-3"></span><br/> Wij bouwen webapps en houden van aanpakken</h2>
         </div>
       </div>
     </div>

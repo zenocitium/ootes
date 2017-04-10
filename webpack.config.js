@@ -1,31 +1,37 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 var webpack = require('webpack');
+var path = require('path')
 
 module.exports = {
-  entry: {
-    ootes: [
-      'webpack-dev-server/client?http://localhost:8080',
-      './app/main.js',
-    ]
-  },
+
+  entry: './app/main.js',
+
   output: {
-    filename: 'public/bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
+
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 8080,
+    hot: true
+  },
+
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.min.js',
+      'vue-router$': 'vue-router/dist/vue-router.common.js',
       'particles$': 'particles.js/particles.js'
     }
   },
+
   module: {
-    eslint: {
-      failOnWarning: false,
-      failOnError: true
-    },
-    loaders: [
+    rules: [
       {
         test: /\.vue$/,
-        loader: 'vue'
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
@@ -33,15 +39,29 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.scss$/i,
-        loader: ExtractTextPlugin.extract(['css','sass'])
+        test: /\.scss$/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader"
+        }, {
+          loader: "sass-loader"
+        }]
       },
       {
         test: /\.font\.(js|json)$/,
-        loader: "style!css!fontgen"
+        use: [{
+          loader: "style-loader"
+        },{
+          loader: "css-loader"
+        },{
+          loader: "fontgen-loader"
+        }]
+
       }
     ]
   },
+
   plugins: [
     new ExtractTextPlugin("public/styles.css"),
     new webpack.ProvidePlugin({
@@ -50,17 +70,7 @@ module.exports = {
       "window.jQuery": "jquery",
       "Tether": 'tether'
     }),
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     NODE_ENV: '"production"'
-    //   }
-    // })
-  ],
-}
 
-function getEntrySources(sources) {
-  if (process.env.NODE_ENV !== 'production') {
-    sources.push('webpack-dev-server/client?http://localhost:8080');
-  }
-  return sources;
+  ]
+
 }
