@@ -1,5 +1,3 @@
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 var webpack = require('webpack');
 var path = require('path')
 
@@ -10,13 +8,6 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
-  },
-
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 8080,
-    hot: true
   },
 
   resolve: {
@@ -63,14 +54,19 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin("public/styles.css"),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery",
       "Tether": 'tether'
     }),
+  ],
 
-  ]
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 9000,
+    hot: true
+  }
 
 }

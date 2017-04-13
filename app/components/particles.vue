@@ -83,13 +83,6 @@ function initParticles(){
     },
     "interactivity": {
       "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "resize": true
-      }
     },
     "retina_detect": true
   }

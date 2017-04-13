@@ -42,7 +42,6 @@ export default class ProjectsResource {
   }
 
   getProject(url){
-
     var projects = this.getProjects()
     var project = projects.find(project => project.url === url)
     return project
