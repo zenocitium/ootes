@@ -1,8 +1,5 @@
 import Vue from 'vue'
 
-import $ from 'jquery'
-var bootstrap = require("../node_modules/bootstrap/dist/js/bootstrap.min.js")
-
 // SCSS
 require('./scss/main.scss')
 
