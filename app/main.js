@@ -22,6 +22,9 @@ Vue.component('particles', particles)
 let about = require('./components/about.vue')
 Vue.component('about', about)
 
+let projectImage = require('./components/project-image.vue')
+Vue.component('project-image', projectImage)
+
 // Import zeh router
 import router from './router'
 

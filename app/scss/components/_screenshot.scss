@@ -3,4 +3,8 @@
     margin: 0 0 2rem;
     box-shadow: 0px 0px 4px #ccc;
   }
+  &.landscape{
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }

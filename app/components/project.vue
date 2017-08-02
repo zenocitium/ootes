@@ -23,17 +23,13 @@
     <div class="section bg-gray-lightest">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 screenshot" v-for="screenshot in project.screenshots">
-            <a v-bind:href=" 'img/' + project.url +  '/' + screenshot">
-              <img v-bind:src=" 'img/' + project.url +  '/' + screenshot" class="img-fluid" alt="Responsive image">
-            </a>
-          </div>
-          </div>
+          <project-image v-for="(image, index) in project.screenshots" :file="image.file" :direction="image.direction" :directory="project.url" ></project-image>
         </div>
       </div>
-
     </div>
+
   </div>
+</div>
 </template>
 
 <script>
@@ -49,6 +45,8 @@ export default {
     return {
       project: restProjectsResource.getProject(this.$route.params.name)
     }
+  },
+  computed: {
   }
 }
 
