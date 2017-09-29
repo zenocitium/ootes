@@ -1,55 +1,54 @@
 .step{
-  max-width: 800px;
-  margin: 0 auto;
-  .circle{
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    background: lighten($brand-primary, 20%);
-    display: flex;
-    justify-content: center;
-    .content{
-      text-align: center;
-      margin: 0 2rem;
-    }
-    h1, h2, h3, h4, h5{
-      font-weight: normal;
-      margin: 0;
-      margin-bottom: 0.2rem;
-    }
-    .icon{
-      font-size: 3.5rem;
-      margin: 0.5rem auto 0.5rem;
-      color: darken($brand-primary, 10%);
-      display: block;
-    }
-    p{
-      font-size: 0.80rem;
-      line-height: 1.5;
-      margin-bottom: 0px;
-    }
-  }
-  .path{
-    padding: 10px 125px;
-    line {
-      stroke: rgb(0, 0, 0);
-      stroke-width: 2
-    }
-  }
-  &.odd{
+    max-width: 800px;
+    margin: 0 auto;
     .circle{
-      float: right;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        background: lighten($brand-primary, 20%);
+        display: flex;
+        justify-content: center;
+        .content{
+            text-align: center;
+            margin: 0 2rem;
+        }
+        h1, h2, h3, h4, h5{
+            font-weight: normal;
+            margin: 0;
+            margin-bottom: 0.2rem;
+        }
+        .icon{
+            font-size: 3.5rem;
+            margin: 0.5rem auto 0.5rem;
+            color: darken($brand-primary, 10%);
+            display: block;
+        }
+        p{
+            font-size: 0.80rem;
+            line-height: 1.5;
+            margin-bottom: 0px;
+        }
     }
     .path{
+        padding: 10px 125px;
+        svg{
+            width: 100%;
+        }
+    }
+    &.odd{
+        .circle{
+            float: right;
+        }
+        .path{
 
+        }
     }
-  }
-  &:last-child{
-    .path{
-      display: none;
+    &:last-child{
+        .path{
+            display: none;
+        }
+        .content{
+            margin: 0 2.75rem;
+        }
     }
-    .content{
-        margin: 0 2.75rem;
-    }
-  }
 }

@@ -20,7 +20,7 @@
 
             <div class="section">
                 <div class="container">
-                    <div class="flex flex-space-between">
+                    <div class="flex flex-space-between content">
                         <div class="col-4 picture">
                             <img src="img/pixel-me-nobg.png" class="img-fluid bg-primary-light" alt="Vue.js">
                         </div>

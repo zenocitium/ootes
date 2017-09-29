@@ -1,4 +1,10 @@
 #about{
+    .content{
+        flex-direction: column;
+        @media (min-width: $break-sm)  {
+          flex-direction: row;
+        }
+    }
     .picture{
         background: $brand-primary-light;
         display: flex;
