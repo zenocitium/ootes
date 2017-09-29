@@ -5,11 +5,16 @@
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    // border:  1px dashed black;
-    padding: 0 2rem;
     background: lighten($brand-primary, 20%);
+    display: flex;
+    justify-content: center;
+    .content{
+      text-align: center;
+      margin: 0 2rem;
+    }
     h1, h2, h3, h4, h5{
       font-weight: normal;
+      margin: 0;
       margin-bottom: 0.2rem;
     }
     .icon{
@@ -20,12 +25,12 @@
     }
     p{
       font-size: 0.80rem;
+      line-height: 1.5;
       margin-bottom: 0px;
     }
   }
   .path{
     padding: 10px 125px;
-    width: 100%;
     line {
       stroke: rgb(0, 0, 0);
       stroke-width: 2
@@ -42,6 +47,9 @@
   &:last-child{
     .path{
       display: none;
+    }
+    .content{
+        margin: 0 2.75rem;
     }
   }
 }

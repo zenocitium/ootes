@@ -1,58 +1,58 @@
-@import 'bootstrap/bootstrap';
-
+@import 'variables';
 @import 'section';
+@import 'container';
 @import 'intro';
 @import 'footer';
+@import 'colours';
+@import 'typography';
+@import 'reset';
+@import 'button';
+@import 'link';
+@import 'badge';
+@import 'columns';
+@import 'flex';
 
 // Route components
 @import 'components/contact';
 @import 'components/home';
-//
-// // Components
+
+// Components
 @import 'components/point';
 @import 'components/step';
 @import 'components/particles';
 @import 'components/client';
+@import 'components/navbar';
 @import 'components/technique';
 @import 'components/project';
+@import 'components/card';
 
 // General elements
 @import 'components/screenshot';
 @import 'components/kontakt';
 
+// Templates
+@import 'templates/project';
+@import 'templates/about';
+
 body{
   transition: all 0.2s ease-in-out;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
 }
+
+
+
 
 a:hover, a:active{
   text-decoration: none;
 }
 
 .vertical-center {
-  // min-height: 100vh; /* These two lines are counted as one :-)       */
   display: flex;
   align-items: center;
 }
 
-.navbar{
-  transition: background 0.6s;
-  &.green{
-    background: $brand-primary;
-  }
-}
-
 .router-link-active{
   color: rgba(0, 0, 0, 0.9);
-}
-
-h1, h2, h3, h4{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
-  .icon{
-    font-size: 3.5rem;
-  }
-}
-
-p{
-  // font-family: 'Overpass Mono', monospace;
 }

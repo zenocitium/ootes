@@ -1,0 +1,25 @@
+.card{
+    background: lighten($brand-primary, 28%);
+    padding: 1rem 1rem 1.5rem;
+    width: 80%;
+    text-align: center;
+    .card-header{
+        border-bottom: 1px solid $brand-primary;
+    }
+    .card-block{
+        .card-title{
+            font-weight: 500;
+        }
+    }
+    @media (max-width: $break-sm)  {
+        margin: 0 0 1rem 0;
+    }
+}
+
+.cards-holder{
+    [class*="col-"] {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+    }
+}

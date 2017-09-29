@@ -1,0 +1,13 @@
+#project{
+    .project-title{
+        font-weight: 500;
+        small{
+            font-weight: 300;
+        }
+    }
+    .screenshots{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

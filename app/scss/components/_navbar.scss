@@ -1,0 +1,37 @@
+.navbar{
+  transition: background 0.6s;
+  // background: $transparent-white;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 1rem 0;
+  .navbar-content{
+    .logo{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      // @include heading();
+      font-size: $font-size-lg;
+      color: white;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-nav{
+    display: flex;
+    .nav-item{
+      margin: 0 0 0 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        font-size: $font-size-base;
+        color: white;
+        // @include heading();
+      }
+    }
+  }
+  &.active{
+    background: $brand-primary-transparent;
+  }
+}

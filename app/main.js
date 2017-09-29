@@ -1,5 +1,10 @@
 import Vue from 'vue'
 
+import VueLightbox from 'vue-lightbox'
+Vue.component("Lightbox",VueLightbox)
+
+// import bootstrap from 'bootstrap'
+
 // SCSS
 require('./scss/main.scss')
 

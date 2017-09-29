@@ -1,0 +1,11 @@
+.badge{
+    background: yellow;
+    display: inline-block;
+    margin-right: .5rem;
+    padding: .5rem .75rem;
+    font-size: $font-size-xs;
+    background: $gray-lightest;
+    border: 1px solid $gray-lighter;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px $brand-primary;
+}

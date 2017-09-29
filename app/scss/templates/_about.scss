@@ -1,0 +1,9 @@
+#about{
+    .picture{
+        background: $brand-primary-light;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+    }
+}

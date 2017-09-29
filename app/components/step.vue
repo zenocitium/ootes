@@ -1,10 +1,10 @@
 <template>
   <div v-bind:class="{ even: isEven, odd: !isEven}" class="step text-center">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-12">
         <div class="circle rounded vertical-center">
           <div class="content">
-            <h5>{{ title }}</h5>
+            <h4>{{ title }}</h4>
             <span v-bind:class="icon"></span>
             <p>{{ text }}</p>
           </div>
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-12">
         <div class="path" v-if="isEven">
           <svg class="img-fluid" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 373.458 205" enable-background="new 0 0 373.458 205" xml:space="preserve">
           <path d="M373.458,205h-1c0-4-0.246-8.236-0.732-12.154l0.992,0.002C373.209,196.806,373.458,200,373.458,205z M369.521,180.876

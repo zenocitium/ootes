@@ -1,13 +1,11 @@
 .intro{
+  height: 85vh;
+  position: relative;
+  color: white;
 
   #particles{
-    position: absolute;
     height: 100%;
     width: 100%;
-  }
-
-  .intro-text{
-    margin: 0 auto;
   }
 
   .text-wrapper{
@@ -18,19 +16,72 @@
     height: 100%;
   }
 
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .container{
+      display: flex;
+      height: 100%;
+      .intro-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .heading{
+          margin: 0;
+        }
+        .icon{
+          font-size: 2rem;
+          margin: 0;
+        }
+      }
+      .bottom{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .down{
+            font-size: 3rem;
+            margin: 1rem 0 1rem;
+            transform: rotate(180deg);
+            font-family: monospace;
+            // color: $brand-primary-dark;
+            color: white;
+        }
+      }
+    }
+  }
+
   &.one-third{
+    height: 33.33vh;
     #particles{
-      height: 33.33vh;
+
     }
     .container{
-      padding-top: 56px;
-      height: 33.33vh;
+      height: 100%;
+    }
+    .overlay{
+      .intro-text{
+        display: flex;
+        flex-direction: column;
+        .icon{
+          margin: 0;
+        }
+        h3{
+          margin: 0;
+        }
+      }
     }
   }
 
   &.full-height{
     .container{
-      height: 100vh;
+
     }
   }
 

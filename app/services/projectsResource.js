@@ -11,18 +11,23 @@ export default class ProjectsResource {
         text: 'Voor Project CrossOver bouwden we een app om procesveranderingen per afdeling inzichtelijk te maken.',
         type: 'Webapp front-end en back-end',
         screenshots: [{
+          url: 'img/crossover/login.png',
           file: 'login.png',
           direction: 'portrait'
         },{
+          url: 'img/crossover/home.png',
           file: 'home.png',
           direction: 'portrait'
         },{
+          url: 'img/crossover/archief.png',
           file: 'archief.png',
           direction: 'portrait'
         },{
+          url: 'img/crossover/bericht.png',
           file: 'bericht.png',
           direction: 'portrait'
         },{
+          url: 'img/crossover/labels.png',
           file: 'labels.png',
           direction: 'portrait'
         }]
@@ -37,24 +42,31 @@ export default class ProjectsResource {
         text: 'Voor GroenLinks bouwden we een app om deur tot deur campaigning mogelijk te maken.',
         type: 'Webapp front-end',
         screenshots: [{
+          url: 'img/glapp/login.png',
           file: 'login.png',
           direction: 'portrait'
         },{
+          url: 'img/glapp/home.png',
           file: 'home.png',
           direction: 'portrait'
         },{
+          url: 'img/glapp/zoeken.png',
           file: 'zoeken.png',
           direction: 'portrait'
         },{
+          url: 'img/glapp/postcode.png',
           file: 'postcode.png',
           direction: 'portrait'
         },{
+          url: 'img/glapp/straat.png',
           file: 'straat.png',
           direction: 'portrait'
         },{
+          url: 'img/glapp/interview.png',
           file: 'interview.png',
           direction: 'portrait'
         },{
+          url: 'img/glapp/over.png',
           file: 'over.png',
           direction: 'portrait'
         }]
@@ -69,18 +81,23 @@ export default class ProjectsResource {
         text: 'Voor De Lichtmeester bouwden we een nieuwe showcase website om te laten zien wat voor mooie dingen Ton Westerik allemaal doet.',
         type: 'Wordpress website',
         screenshots: [{
+          url: 'img/delichtmeester/home1.png',
           file: 'home1.png',
           direction: 'landscape'
         },{
+          url: 'img/delichtmeester/lichtadvies.png',
           file: 'lichtadvies.png',
           direction: 'landscape'
         },{
+          url: 'img/delichtmeester/navigation.png',
           file: 'navigation.png',
           direction: 'landscape'
         },{
+          url: 'img/delichtmeester/projecten.png',
           file: 'projecten.png',
           direction: 'landscape'
         },{
+          url: 'img/delichtmeester/contact.png',
           file: 'contact.png',
           direction: 'landscape'
         }]

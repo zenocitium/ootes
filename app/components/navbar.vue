@@ -1,13 +1,12 @@
 <template>
 
-  <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-white-transparent">
-    <nav class="container">
-      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#"><b>Ootes</b> Web</a>
-      <div class="navbar-collapse collapse" id="navbarCollapse" aria-expanded="false">
-        <ul class="navbar-nav mr-auto">
+  <nav class="navbar top">
+    <div class="container">
+      <div class="navbar-content">
+        <a class="logo" href="#">
+          <span><b>Ootes</b> Web</span>
+        </a>
+        <ul class="navbar-nav">
           <li class="nav-item">
             <router-link class="nav-link" to="/projects">Projecten</router-link>
           </li>
@@ -16,7 +15,7 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   </nav>
 
 </template>
@@ -37,8 +36,8 @@ export default {
 
 function initNavScroll(){
 
-  var bgWhiteString = 'bg-white-transparent'
-  let bgPrimaryString = 'bg-primary-transparent'
+  var bgWhiteString = 'top'
+  let bgPrimaryString = 'active'
 
   var navbarElement = document.getElementsByClassName("navbar")[0]
   var introElement = document.getElementsByClassName("intro")[0]

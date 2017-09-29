@@ -3,34 +3,39 @@
   <div>
     <div class="intro one-third">
       <particles></particles>
-      <div class="container">
-        <div class="vertical-center">
-          <div class="text-wrapper text-center">
-            <h3 class=""><span class="icon icon-folder-2"></span></h3>
-            <h3>Projecten</h3>
+      <div class="overlay">
+        <div class="container">
+          <div class="flex flex-center">
+            <span class="intro-text">
+              <span class="icon icon-folder-2"></span>
+              <h3>Projecten</h3>
+            </span>
           </div>
         </div>
       </div>
     </div>
+
     <div class="section">
       <div class="container">
 
-        <div class="card-deck">
+        <div class="row cards-holder">
 
-          <div class="card project" v-for="project in projects">
+          <div class="col-4" v-for="project in projects">
 
-            <div class="card-header vertical-center image">
-              <img class="card-img-top img-fluid" :src= "project.img" :alt="project.project">
+            <div class="card project">
+
+              <div class="card-header vertical-center image">
+                <img class="card-img-top img-fluid" :src= "project.img" :alt="project.project">
+              </div>
+
+              <div class="card-block">
+                <h4 class="card-title">{{ project.name }}</h4>
+                <p class="card-text">{{ project.text }}</p>
+                <a v-bind:href="'#/project/' + project.url">
+                  <button type="button" class="btn btn-outline-secondary">Lees meer</button>
+                </a>
+              </div>
             </div>
-
-            <div class="card-block">
-              <h4 class="card-title">{{ project.name }}</h4>
-              <p class="card-text">{{ project.text }}</p>
-              <a v-bind:href="'#/project/' + project.url">
-                <button type="button" class="btn btn-outline-secondary">Meer</button>
-              </a>
-            </div>
-
           </div>
 
         </div>

@@ -2,10 +2,10 @@ footer{
   background: $gray-lighter;
   color: $gray-light;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
   .icon{
     padding: 1rem;
-
     line-height: inherit !important;
-
   }
 }

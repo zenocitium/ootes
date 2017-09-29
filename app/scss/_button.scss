@@ -1,0 +1,13 @@
+button{
+  border-radius: 3px;
+  padding: 1rem 1.5rem;
+  background: #38e6a4;
+  cursor: pointer;
+  border: 0;
+  letter-spacing: 1px;
+  font-size: .875rem;
+  box-shadow: 3px 3px 0px lighten($brand-primary, 25%);
+  color: white;
+  border: 1px solid #38e6a4;
+  padding: 1rem 2rem;
+}

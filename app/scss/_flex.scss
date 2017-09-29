@@ -1,0 +1,37 @@
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    // &::after{
+    //     content: "";
+    //     flex: auto;
+    //     display: block;
+    //     width: 1rem;
+    // }
+    .col-3:nth-child(3n+2) {
+        &:last-child{
+            margin: 0 0 0 3rem;
+            @media only screen and (max-width: $break-sm)  {
+                margin: 0;
+            }
+        }
+    }
+}

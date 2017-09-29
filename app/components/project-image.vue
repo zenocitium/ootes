@@ -1,7 +1,10 @@
 <template>
-  <div class="screenshot col-md-3" v-bind:class="direction">
-    <a v-bind:href=" 'img/' + directory +  '/' + file">
-      <img v-bind:src=" 'img/' + directory +  '/' + file" class="img-fluid" alt="Responsive image" />
+  <div class="screenshot" v-bind:class="direction">
+    <a>
+      <lightbox album="a" v-bind:src="url">
+        <img width="100px" v-bind:src="url" class="img-fluid">
+      </lightbox>
+      <!-- <img v-bind:src="url" class="img-fluid" alt="Responsive image" /> -->
     </a>
   </div>
 </template>
@@ -13,7 +16,8 @@ export default {
   props: [
     'directory',
     'direction',
-    'file'
+    'file',
+    'url'
   ]
 }
 
