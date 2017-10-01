@@ -17,6 +17,7 @@
 }
 
 .cards-holder{
+    justify-content: space-between;
     [class*="col-"] {
         display: flex;
         justify-content: center;
