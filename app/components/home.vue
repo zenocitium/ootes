@@ -8,7 +8,7 @@
 
             <span class="intro-text">
               <span class="icon icon-greenhouse"></span>
-              <h2 class="heading">Waar digitale ideen groeien.</h2>
+              <h2 class="heading">Waar digitale ideën uitgroeien tot producten.</h2>
             </span>
             <div class="bottom">
               <span class="down">Δ</span>
