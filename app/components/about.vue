@@ -25,7 +25,7 @@
                             <img src="img/pixel-me-nobg.png" class="img-fluid bg-primary-light" alt="Vue.js">
                         </div>
                         <div class="col-8">
-                            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voorgekomen uit de wens om zelfstandig platformen te bouwen voor mooie initiatieven. Door op een effectieve manier samen te werken kan een idee tot leven komen en kan er snel waarde ontstaan.</p>
+                            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voortgekomen uit de wens om zelfstandig platformen te bouwen voor mooie initiatieven. Door op een effectieve manier samen te werken kan een idee tot leven komen en kan er snel waarde ontstaan.</p>
                             <p><a class="link" href="http://ootes.io">Ootes.io</a><br>
                                 <a href="#" target="_blank">tomootes@gmail.com</a><br/>
                                 0623447230<br/>
