@@ -3,8 +3,6 @@ import Vue from 'vue'
 import VueLightbox from 'vue-lightbox'
 Vue.component("Lightbox",VueLightbox)
 
-// import bootstrap from 'bootstrap'
-
 // SCSS
 require('./scss/main.scss')
 
@@ -23,6 +21,9 @@ Vue.component('step', step)
 
 let particles = require('./components/particles.vue')
 Vue.component('particles', particles)
+
+let map = require('./components/map.vue')
+Vue.component('location', map)
 
 let about = require('./components/about.vue')
 Vue.component('about', about)

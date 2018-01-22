@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "mapbox-gl": "^0.43.0",
     "particles.js": "^2.0.0"
   },
   "devDependencies": {

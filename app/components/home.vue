@@ -10,7 +10,7 @@
               <span class="icon icon-greenhouse"></span>
               <h2 class="heading">Wij bouwen slimme web oplossingen.</h2>
 			  <a href="#/about">
-				  <button type="button" class="btn--light">Bel/mail Tom</button>
+				  <button type="button" class="btn btn--light">Bel/mail Tom</button>
 			  </a>
             </span>
             <div class="bottom">
@@ -91,6 +91,8 @@
         </div>
       </div>
     </div>
+
+	<location></location>
 
   </div>
 </template>
