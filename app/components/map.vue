@@ -7,7 +7,7 @@
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
 export default {
-    name: 'peop',
+    name: 'map',
     mounted: function() {
 
         mapboxgl.accessToken = 'pk.eyJ1IjoidG9tb290ZXMiLCJhIjoiOXRKWGVCUSJ9.QaSlGLJBy4CE2nDNpe-OLg';
