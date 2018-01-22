@@ -50,6 +50,8 @@ export default {
                 .addTo(map);
         });
 
+		map.scrollZoom.disable();
+
 
 
     }
