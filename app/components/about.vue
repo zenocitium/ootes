@@ -25,7 +25,7 @@
                             <img src="img/pixel-me-nobg.png" class="img-fluid bg-primary-light" alt="Vue.js">
                         </div>
                         <div class="col-8">
-                            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voortgekomen uit de wens om zelfstandig oplossingen te bouwen voor mooie initiatieven. Door op een effectieve manier samen te werken kan een idee snel tot leven komen en ontstaat er een geslaagde toepassing.</p>
+                            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voortgekomen uit de wens om zelfstandig oplossingen te bouwen voor toffe initiatieven.</p>
 							<p>Na meerdere jaren naast mijn studie part-time functies binnen de ICT te hebben vervuld heb ik anderhalf jaar bij Geodan gewerkt als ontwikkelaar. Daar heb ik de nodige ervaring op gedaan met Geo en Innovatie. Ik was altijd al bezig met kleinere klussen als freelancer en in 2017 besloot ik de stap te wagen en voor mezelf te beginnen.</p>
 							<p>Onderwerpen waar wij extra enthousiast van worden zijn: </p>
 
