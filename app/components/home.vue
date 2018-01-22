@@ -8,7 +8,10 @@
 
             <span class="intro-text">
               <span class="icon icon-greenhouse"></span>
-              <h2 class="heading">Waar digitale ideën uitgroeien tot producten.</h2>
+              <h2 class="heading">Wij bouwen slimme web oplossingen.</h2>
+			  <a href="#/about">
+				  <button type="button" class="btn--light">Bel/mail Tom</button>
+			  </a>
             </span>
             <div class="bottom">
               <span class="down">Δ</span>
@@ -20,7 +23,7 @@
 
     <div class="section point-section">
       <div class="container">
-        <h2 class="intro-text flex-center">Onze apps zijn</h2>
+        <h2 class="intro-text flex-center">Onze oplossingen zijn</h2>
         <div class="row points">
           <div class="col-4" v-for="point in points">
             <point :title="point.title" :icon="point.icon" :text="point.text"></point>
@@ -33,7 +36,7 @@
       <div class="container">
 
         <h1 class="flex-center"><span class="icon icon-map-treasure"></span></h1>
-        <h1 class="flex-center">Werkwijze</h1>
+        <h1 class="flex-center">Hoe komen we er?</h1>
         <br />
         <div class="row">
           <div class="container">
@@ -42,7 +45,7 @@
         </div>
         <div class="block">
           <h1 class="flex-center"><span class="icon icon-synchronize-3 icon-big"></span></h1>
-          <p class="flex-center">We werken iteratief dus we plannen zoveel feedback momenten in als wenselijk is, dit hangt natuurlijk af van de lengte van het traject.</p>
+          <p class="flex-center">De lengte van een sprint (timebox) spreken we gezamenlijk af.</p>
         </div>
 
       </div>
@@ -107,44 +110,44 @@ export default {
         {
           title: 'Solide',
           icon: 'icon icon-cog',
-          text: 'Goed opgezette projecten zorgen ervoor dat er makkelijk veranderingen doorgevoerd kunnen worden en kwaliteit gewaardborgd blijft. Zo wordt het project zo agile als het maar zijn kan.'
+          text: 'Technisch goed opgezette projecten zorgen ervoor dat er makkelijk veranderingen doorgevoerd kunnen worden en kwaliteit gewaardborgd blijft. Zo wordt het project zo agile als het maar zijn kan.'
         },
         {
           title: 'Gebruiksvriendelijk',
           icon: 'icon icon-usability',
-          text: 'Door onze praktijkervaring weten wij welke drempels er zijn en welke regels er nageleeft moeten worden om een app logisch en gebruiksvriendelijk te laten werken.'
+          text: 'Door onze praktijkervaring weten we welke regels er nageleeft moeten worden om een app gebruiksvriendelijk maken. Daarnaast zorgt iteratief werken ervoor dat we het product samen kunnen bijschaven.'
         },
         {
           title: 'Prachtig',
           icon: 'icon icon-design-mug',
-          text: 'Om een project te laten slagen is het belangrijk dat de stakeholders het resultaat een aantrekkelijk product vinden. Wij besteden veel aandacht aan het automatiseren van de styling en het design zodat het eindresultaat mooi en overzichtelijk is.'
+          text: 'Om een project te laten slagen is het belangrijk dat de stakeholders het resultaat een aantrekkelijk product vinden. Wij automatiseren design zodat het eindresultaat mooi en overzichtelijk is.'
         }
       ],
       steps: [
         {
-          title: 'Specificaties',
+          title: 'Praten',
           icon: 'icon icon-clipboard-edit',
-          text: 'We nemen de specificaties op en schatten in hoeveel werk bepaalde functionaliteiten zullen zijn.'
+          text: 'We kijken samen naar het idee.'
         },
         {
           title: 'Bouwen',
           icon: 'icon icon-hammer-1',
-          text: 'We beginnen met bouwen. Als het nodig is vragen we om verduidelijking, zo zorgen we dat het resultaat aansluit op de verwachtingen.'
+          text: 'We bouwen aan de afgesproken functionaliteit binnen een sprint.'
         },
-        {
-          title: 'Feedback',
-          icon: 'icon icon-chat-double-bubble-1',
-          text: 'De eerste versie wordt opgeleverd. Aan de hand hiervan kijken we samen of het product naar wens is en of er bijsturing nodig is.'
-        },
+	    {
+	      title: 'Feedback',
+	      icon: 'icon icon-chat-double-bubble-1',
+	      text: 'Nieuwe versie online, hier wordt feedback op gegeven. Prioriteiten kunnen heroverwogen worden. '
+	    },
         {
           title: 'Bouwen',
           icon: 'icon icon-tools-wrench-screwdriver',
-          text: 'Aan de hand van de feedback gaan we door met bouwen. Hierbij hebben we de laatste functionaliteiten scherp op het netvlies.'
+          text: 'Aan de hand van de feedback wordt er verder gebouwd.'
         },
         {
           title: 'Opleveren',
           icon: 'icon icon-treasure-chest-open',
-          text: 'Als we alle functionaliteit hebben afgevinkt en wel allebei tevreden zijn met het eindresultaat leveren we op.'
+          text: 'Als alle functionaliteit is afgevinkt en we allebei tevreden zijn wordt er opgeleverd.'
         },
       ],
       projects: restProjectsResource.getProjects()

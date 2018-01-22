@@ -25,19 +25,25 @@
                             <img src="img/pixel-me-nobg.png" class="img-fluid bg-primary-light" alt="Vue.js">
                         </div>
                         <div class="col-8">
-                            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voortgekomen uit de wens om zelfstandig platformen te bouwen voor mooie initiatieven. Door op een effectieve manier samen te werken kan een idee tot leven komen en kan er snel waarde ontstaan.</p>
-                            <p><a class="link" href="http://ootes.io">Ootes.io</a><br>
-                                <a href="#" target="_blank">tomootes@gmail.com</a><br/>
-                                0623447230<br/>
-                                <br/>
-                                Terschelling 112 K7<br/>
-                                3524AZ Utrecht<br/><br/>
-                                <b>BTW</b> NL209059643B01<br/>
-                                <b>KVK</b> 59479817<br/>
-                                <br>
-                                <b>Betalingen</b><br>
-                                NL06 ASNB 0708 9079 97<br/>
-                                Tnv T. Ootes </br>Onder vermelding van factuurnummer </p>
+                            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voortgekomen uit de wens om zelfstandig oplossingen te bouwen voor mooie initiatieven. Door op een effectieve manier samen te werken kan een idee snel tot leven komen en ontstaat er een geslaagde toepassing.</p>
+							<p>Na meerdere jaren naast mijn studie part-time functies binnen de ICT te hebben vervuld heb ik anderhalf jaar bij Geodan gewerkt als ontwikkelaar. Daar heb ik de nodige ervaring op gedaan met Geo en Innovatie. Ik was altijd al bezig met kleinere klussen als freelancer en in 2017 besloot ik de stap te wagen en voor mezelf te beginnen.</p>
+							<p>Onderwerpen waar wij extra enthousiast van worden zijn: </p>
+
+							<ul class="list">
+								<li>Duurzaamheid</li>
+								<li>Geo</li>
+								<li>Sociale initiatieven</li>
+								<li>Politiek</li>
+							</ul>
+
+							<div class="company-info">
+								<p><a href="#" target="_blank" class="link">tomootes@gmail.com</a></p>
+								<p><a href="tel:+31623447230" class="link">06234472309</a></p>
+	                            <p>BTW: NL209059643B01</p>
+	                            <p>KVK: 59479817</p>
+	                            <p>Rek: NL06 ASNB 0708 9079 97</p>
+							</div>
+
                             </div>
                         </div>
                     </div>

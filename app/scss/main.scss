@@ -7,6 +7,8 @@
 @import 'typography';
 @import 'reset';
 @import 'button';
+@import 'company-info';
+@import 'list';
 @import 'link';
 @import 'badge';
 @import 'columns';
@@ -40,8 +42,6 @@ body{
   padding: 0;
   font-size: 100%;
 }
-
-
 
 
 a:hover, a:active{

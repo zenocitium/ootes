@@ -1,0 +1,9 @@
+.list{
+	margin: 1rem 0 1rem 1rem;
+	list-style: disc;
+	padding: auto;
+	li{
+		font-weight: bold;
+		font-size: $font-size-sm;
+	}
+}
