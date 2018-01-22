@@ -30,6 +30,7 @@
 							<p>Onderwerpen waar wij extra enthousiast van worden zijn: </p>
 
 							<ul class="list">
+								<li>Blockchain</li>
 								<li>Duurzaamheid</li>
 								<li>Geo</li>
 								<li>Sociale initiatieven</li>
