@@ -39,8 +39,8 @@ export default class ProjectsResource {
         img: 'img/groenlinks.png',
         address: 'https://glapp.nl',
         techniques: [ 'Angular', 'SCSS' ],
-        text: 'Voor GroenLinks bouwden we een app om deur tot deur campaigning efficiënter te maken.',
-        type: 'Webapp front-end',
+        text: 'Voor GroenLinks bouwden we een web-app om deur tot deur campaigning efficiënter te maken.',
+        type: 'Web app front-end',
         screenshots: [{
           url: 'img/glapp/login.png',
           file: 'login.png',
