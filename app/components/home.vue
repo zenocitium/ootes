@@ -8,7 +8,7 @@
 
             <span class="intro-text">
               <span class="icon icon-greenhouse"></span>
-              <h2 class="heading">Wij bouwen slimme web oplossingen.</h2>
+              <h2 class="heading">Wij bouwen web oplossingen.</h2>
 			  <a href="#/about">
 				  <button type="button" class="btn btn--light">Bel/mail Tom</button>
 			  </a>
