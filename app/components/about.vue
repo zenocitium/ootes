@@ -25,20 +25,19 @@
                             <img src="img/pixel-me-nobg.png" class="img-fluid bg-primary-light" alt="Vue.js">
                         </div>
                         <div class="col-8">
-                            <p><b>Ootes</b> Web is het bedrijf van Tom Ootes en is voortgekomen uit de wens om zelfstandig oplossingen te bouwen voor toffe initiatieven.</p>
-							<p>Na meerdere jaren naast mijn studie part-time functies binnen de ICT te hebben vervuld heb ik anderhalf jaar bij Geodan gewerkt als ontwikkelaar. Daar heb ik de nodige ervaring op gedaan met Geo en Innovatie. Ik was altijd al bezig met kleinere klussen als freelancer en in 2017 besloot ik de stap te wagen en voor mezelf te beginnen.</p>
-							<p>Onderwerpen waar wij extra enthousiast van worden zijn: </p>
+                            <p><b>Ootes</b> Web is het bedrijf van mij, Tom Ootes en is voortgekomen uit de wens om zelfstandig oplossingen te bouwen voor toffe initiatieven.</p>
+							<p>Naast mijn studie Informatica aan de HvA heb ik altijd baantjes gehad binnen de ICT. Na mij studie heb ik anderhalf jaar bij Geodan gewerkt als ontwikkelaar. Daar heb ik de nodige ervaring op gedaan met Geo en Innovatie. Ik was altijd al bezig met kleinere klussen als freelancer en in 2017 besloot ik de stap te wagen en voor mezelf te beginnen.</p>
+							<p>Onderwerpen waar ik extra enthousiast van word zijn: </p>
 
 							<ul class="list">
-								<li>Blockchain</li>
 								<li>Duurzaamheid</li>
+								<li>Blockchain</li>
 								<li>Geo</li>
 								<li>Sociale initiatieven</li>
-								<li>Politiek</li>
 							</ul>
 
 							<div class="company-info">
-								<p><a href="#" target="_blank" class="link">tomootes@gmail.com</a></p>
+								<p><a href="email:tomootes@gmail.com" target="_blank" class="link">tomootes@gmail.com</a></p>
 								<p><a href="tel:+31623447230" class="link">06234472309</a></p>
 	                            <p>BTW: NL209059643B01</p>
 	                            <p>KVK: 59479817</p>
