@@ -5,8 +5,9 @@ export default class ProjectsResource {
       {
         client: 'CrossOver',
         url: 'crossover',
+        date: '2017-03-02',
         name: 'CrossOver App',
-        img: 'img/crossover.png',
+        img: 'img/crossover.png', 
         techniques: [ 'Angular', 'SCSS', 'Node','Express','MongoDB'],
         text: 'Voor Project CrossOver bouwden we een app om procesveranderingen per afdeling inzichtelijk te maken.',
         type: 'Webapp front-end en back-end',
@@ -35,6 +36,7 @@ export default class ProjectsResource {
       {
         client: 'Groenlinks',
         url: 'glapp',
+        date: '2017-03-05',
         name: 'Glapp',
         img: 'img/groenlinks.png',
         address: 'https://glapp.nl',
@@ -74,6 +76,7 @@ export default class ProjectsResource {
       {
         client: 'De Lichtmeester',
         url: 'delichtmeester',
+        date: '2017-07-05',
         name: 'De Lichtmeester',
         img: 'img/delichtmeester.svg',
         address: 'http://delichtmeester.nl/content',
@@ -106,6 +109,7 @@ export default class ProjectsResource {
       {
         client: 'Sensire',
         url: 'sensire',
+        date: '2018-01-05',
         name: 'Sensire',
         img: 'img/sensire.svg',
         address: 'http://sensire.nl',

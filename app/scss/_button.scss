@@ -1,5 +1,5 @@
 .btn {
-	border-radius: 3px;
+	// border-radius: 3px;
 	padding: 1rem 1.5rem;
 	background: #38e6a4;
 	cursor: pointer;
@@ -13,6 +13,13 @@
 
 	&.btn--light{
 		background: lighten($brand-primary, 20%);
+		border: 0;
+		box-shadow: none;
+	}
+
+	&.btn--white{
+		color: $brand-primary;
+		background: white;
 		border: 0;
 		box-shadow: none;
 	}

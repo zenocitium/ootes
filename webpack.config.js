@@ -57,10 +57,10 @@ module.exports = {
 
   plugins: [
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery",
-      "Tether": 'tether'
+      // $: "jquery",
+      // jQuery: "jquery",
+      // "window.jQuery": "jquery",
+      // "Tether": 'tether'
     }),
     new webpack.HotModuleReplacementPlugin()
   ],

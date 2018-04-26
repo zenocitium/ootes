@@ -5,4 +5,10 @@
   @media(max-width: $break-sm){
     width: calc( 100% - 2rem );
   }
+  &.container--small{
+    width: 50vw;
+    @media(max-width: $break-sm){
+      width: calc( 100% - 2rem );
+    }
+  }
 }

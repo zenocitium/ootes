@@ -1,13 +1,14 @@
 .card{
     background: lighten($brand-primary, 28%);
     padding: 1rem 1rem 1.5rem;
-    width: 80%;
+    width: 100%;
     text-align: center;
     .card-header{
         border-bottom: 1px solid $brand-primary;
     }
     .card-text{
         margin: 1.5rem 0;
+        font-size: $font-size-sm;
     }
     .card-block{
         .card-title{

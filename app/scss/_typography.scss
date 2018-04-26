@@ -14,7 +14,7 @@ body{
 
 h1, h2, h3, h4, h5{
   font-family: $heading-family;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: .5rem;
   .icon{
     font-size: 3.5rem;
@@ -53,7 +53,11 @@ html{
 p{
   font-weight: lighter;
   line-height: 1.75;
-  font-size: $font-size-sm;
+  font-size: $font-size-base;
+  a{
+    color: $brand-primary;
+    text-decoration: underline;
+  }
 }
 
 @mixin heading() {

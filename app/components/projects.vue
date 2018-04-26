@@ -19,10 +19,9 @@
       <div class="container">
 
         <div class="row cards-holder">
-          <div class="col-4" v-for="project in projects">
-
+          <div class="col-3" v-for="project in sortByDate(projects)" :key="project">
+            
             <div class="card project">
-
               <div class="card-header vertical-center image">
                 <img class="card-img-top img-fluid" :src= "project.img" :alt="project.project">
               </div>
@@ -31,7 +30,7 @@
                 <!-- <h4 class="card-title">{{ project.name }}</h4> -->
                 <p class="card-text">{{ project.text | truncate(140, '...') }}</p>
                 <a v-bind:href="'#/project/' + project.url">
-                  <button type="button" class="btn btn-outline-secondary">Lees meer</button>
+                  <button type="button" class="btn btn-outline-secondary btn--white">Lees meer</button>
                 </a>
               </div>
             </div>
@@ -46,6 +45,8 @@
 
 <script>
 
+import _ from 'lodash';
+
 import ProjectsResource from '../services/projectsResource.js';
 const restProjectsResource = new ProjectsResource();
 
@@ -53,6 +54,11 @@ let particles = require('particles.js')
 
 export default {
   name: 'projects',
+  methods: {
+    sortByDate(projects) {
+      return _.orderBy(projects, 'date', 'desc'); 
+    }
+  },
   data () {
     return {
       projects: restProjectsResource.getProjects()

@@ -17,16 +17,18 @@
 
             </div>
             <div class="section">
-                <div class="container">
+                <div class="container container--small">
                     <h3 class="project-title">{{ project.client }} <a class="link" v-bind:href="project.address" target="_blank"><small class="text-muted">{{ project.type }}</small></a></h3>
                     <p v-html="project.text"></p>
-                    <p><div class="badge badge-primary" v-for="technique in project.techniques">{{ technique }}</div></p>
+                    <div>
+                        <!-- <div class="badge badge-primary" v-for="technique in project.techniques" :key="technique">{{ technique }}</div> -->
+                    </div>
                 </div>
             </div>
             <div class="section bg-gray-lightest">
                 <div class="container">
                     <div class="screenshots">
-                        <project-image v-for="(image, index) in project.screenshots" :file="image.file" :direction="image.direction" :url="image.url" ></project-image>
+                        <project-image v-for="screenshot in project.screenshots" :file="screenshot.file" :direction="screenshot.direction" :url="screenshot.url" :key="screenshot.file"></project-image>
                     </div>
                 </div>
             </div>
@@ -36,26 +38,21 @@
 </template>
 
 <script>
-
-
-
-import ProjectsResource from '../services/projectsResource.js';
+import ProjectsResource from "../services/projectsResource.js";
 const restProjectsResource = new ProjectsResource();
 
-let particles = require('particles.js')
+let particles = require("particles.js");
 
 export default {
-    name: 'project',
-    mounted: () => {
-        window.scrollTo(0, 0);
-    },
-    data () {
-        return {
-            project: restProjectsResource.getProject(this.$route.params.name)
-        }
-    },
-    computed: {
-    }
-}
-
+  name: "project",
+  mounted: () => {
+    window.scrollTo(0, 0);
+  },
+  data() {
+    return {
+      project: restProjectsResource.getProject(this.$route.params.name)
+    };
+  },
+  computed: {}
+};
 </script>

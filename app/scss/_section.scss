@@ -1,5 +1,5 @@
 .section{
-  padding: 8rem 0;
+  padding: 5rem 0;
   width: 100%;
   border-bottom: 1px solid $gray-lighter;
   &.section--smaller{
@@ -10,5 +10,8 @@
     &:last-child{
       margin: 7rem 0 0;
     }
+  }
+  .section--heading{
+    margin: 0 0 2rem 0;
   }
 }

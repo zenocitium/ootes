@@ -5,13 +5,12 @@
       <particles></particles>
       <div class="overlay">
         <div class="container">
-
             <span class="intro-text">
               <span class="icon icon-greenhouse"></span>
               <h2 class="heading">Wij bouwen web oplossingen.</h2>
-			  <a href="#/about">
-				  <button type="button" class="btn btn--light">Bel/mail Tom</button>
-			  </a>
+              <a href="#/about">
+                <button type="button" class="btn btn--light">Bel/mail Tom</button>
+              </a>
             </span>
             <div class="bottom">
               <span class="down">Δ</span>
@@ -21,18 +20,48 @@
       </div>
     </div>
 
-    <div class="section point-section">
+    <div class="section point-section ">
       <div class="container">
-        <h2 class="intro-text flex-center">Onze oplossingen zijn</h2>
+        <h2 class="section--heading flex-center">Recente projecten</h2>
+        <div class="row cards-holder">
+          <div class="col-3" v-for="project in sortByDate(projects)" :key="project">
+            
+            <div class="card project">
+              <div class="card-header vertical-center image">
+                <img class="card-img-top img-fluid" :src= "project.img" :alt="project.project">
+              </div>
+
+              <div class="card-block">
+                <!-- <h4 class="card-title">{{ project.name }}</h4> -->
+                <p class="card-text">{{ project.text | truncate(140, '...') }}</p>
+                <a v-bind:href="'#/project/' + project.url">
+                  <button type="button" class="btn btn-outline-secondary btn--white">Lees meer</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex-center gutter-top-small">
+          <a v-bind:href="'#/projects/'">
+            <button type="button" class="btn btn-outline-secondary ">Alle projecten</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+        <div class="section point-section bg-gray-lightest">
+      <div class="container">
+        <h2 class="section--heading flex-center">Onze oplossingen zijn</h2>
         <div class="row points">
-          <div class="col-4" v-for="point in points">
+          <div class="col-4" v-for="point in points" :key="point.title">
             <point :title="point.title" :icon="point.icon" :text="point.text"></point>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section bg-gray-lightest">
+    <div class="section">
       <div class="container">
 
         <h1 class="flex-center"><span class="icon icon-map-treasure"></span></h1>
@@ -51,12 +80,12 @@
       </div>
     </div>
 
-    <div class="section">
+    <!-- <div class="section">
       <div class="container">
         <h1 class="flex-center">Opdrachtgevers</h1>
         <p class="flex-center">Wij hebben eerder samengewerkt met</p>
         <div class="flex">
-          <a v-bind:href="'#/project/' + project.url" class="client" v-for="project in projects">
+          <a v-bind:href="'#/project/' + project.url" class="client" v-for="project in projects" :key="project">
             <img :src= "project.img" />
           </a>
         </div>
@@ -64,9 +93,9 @@
           <a href="#/projects"><button type="button" class="btn btn-primary">Naar projecten</button></a>
         </p>
       </div>
-    </div>
+    </div> -->
 
-    <div class="section bg-gray-lightest">
+    <!-- <div class="section bg-gray-lightest">
       <div class="container">
         <h1 class="flex-center">Techniek</h1>
         <br>
@@ -90,7 +119,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 	<location></location>
 
@@ -98,81 +127,92 @@
 </template>
 
 <script>
-
-import ProjectsResource from '../services/projectsResource.js';
+import ProjectsResource from "../services/projectsResource.js";
 const restProjectsResource = new ProjectsResource();
 
-let particles = require('particles.js')
+let particles = require("particles.js");
 
 export default {
-  name: 'home',
-  data: function(){
+  name: "home",
+  methods: {
+    sortByDate(projects) {
+      return _.orderBy(projects, "date", "desc").slice(0, 4);
+    }
+  },
+  data: function() {
     return {
       points: [
         {
-          title: 'Solide',
-          icon: 'icon icon-cog',
-          text: 'Technisch goed opgezette projecten zorgen ervoor dat er makkelijk veranderingen doorgevoerd kunnen worden en kwaliteit gewaardborgd blijft. Zo wordt het project zo agile als het maar zijn kan.'
+          title: "Solide",
+          icon: "icon icon-cog",
+          text:
+            "Technisch goed opgezette projecten zorgen ervoor dat er makkelijk veranderingen doorgevoerd kunnen worden en kwaliteit gewaardborgd blijft. Zo wordt het project zo agile als het maar zijn kan."
         },
         {
-          title: 'Gebruiksvriendelijk',
-          icon: 'icon icon-usability',
-          text: 'Door onze praktijkervaring weten we welke regels er nageleeft moeten worden om een app gebruiksvriendelijk maken. Daarnaast zorgt iteratief werken ervoor dat we het product samen kunnen bijschaven.'
+          title: "Gebruiksvriendelijk",
+          icon: "icon icon-usability",
+          text:
+            "Door onze praktijkervaring weten we welke regels er nageleeft moeten worden om een app gebruiksvriendelijk maken. Daarnaast zorgt iteratief werken ervoor dat we het product samen kunnen bijschaven."
         },
         {
-          title: 'Prachtig',
-          icon: 'icon icon-design-mug',
-          text: 'Om een project te laten slagen is het belangrijk dat de stakeholders het resultaat een aantrekkelijk product vinden. Wij automatiseren design zodat het eindresultaat mooi en overzichtelijk is.'
+          title: "Prachtig",
+          icon: "icon icon-design-mug",
+          text:
+            "Om een project te laten slagen is het belangrijk dat de stakeholders het resultaat een aantrekkelijk product vinden. Wij automatiseren design zodat het eindresultaat mooi en overzichtelijk is."
         }
       ],
       steps: [
         {
-          title: 'Praten',
-          icon: 'icon icon-clipboard-edit',
-          text: 'We kijken samen naar het idee.'
+          title: "Praten",
+          icon: "icon icon-clipboard-edit",
+          text: "We kijken samen naar het idee."
         },
         {
-          title: 'Bouwen',
-          icon: 'icon icon-hammer-1',
-          text: 'We bouwen aan de afgesproken functionaliteit binnen een sprint.'
-        },
-	    {
-	      title: 'Feedback',
-	      icon: 'icon icon-chat-double-bubble-1',
-	      text: 'Nieuwe versie online, hier wordt feedback op gegeven. Prioriteiten kunnen heroverwogen worden. '
-	    },
-        {
-          title: 'Bouwen',
-          icon: 'icon icon-tools-wrench-screwdriver',
-          text: 'Aan de hand van de feedback wordt er verder gebouwd.'
+          title: "Bouwen",
+          icon: "icon icon-hammer-1",
+          text:
+            "We bouwen aan de afgesproken functionaliteit binnen een sprint."
         },
         {
-          title: 'Opleveren',
-          icon: 'icon icon-treasure-chest-open',
-          text: 'Als alle functionaliteit is afgevinkt en we allebei tevreden zijn wordt er opgeleverd.'
+          title: "Feedback",
+          icon: "icon icon-chat-double-bubble-1",
+          text:
+            "Nieuwe versie online, hier wordt feedback op gegeven. Prioriteiten kunnen heroverwogen worden. "
         },
+        {
+          title: "Bouwen",
+          icon: "icon icon-tools-wrench-screwdriver",
+          text: "Aan de hand van de feedback wordt er verder gebouwd."
+        },
+        {
+          title: "Opleveren",
+          icon: "icon icon-treasure-chest-open",
+          text:
+            "Als alle functionaliteit is afgevinkt en we allebei tevreden zijn wordt er opgeleverd."
+        }
       ],
       projects: restProjectsResource.getProjects()
-    }
-  },
-}
+    };
+  }
+};
 
-function setPointsEvenHeight(){
+function setPointsEvenHeight() {
+  let pointElements = document.getElementsByClassName("point");
 
-  let pointElements = document.getElementsByClassName("point")
-
-  let pointsArray = [].slice.call(pointElements)
-  let max = Math.max.apply(null, pointsArray.map(function(a){
-    return a.offsetHeight}
-  ))
+  let pointsArray = [].slice.call(pointElements);
+  let max = Math.max.apply(
+    null,
+    pointsArray.map(function(a) {
+      return a.offsetHeight;
+    })
+  );
 
   for (let element of pointElements) {
-    element.style.height = max + 'px'
+    element.style.height = max + "px";
   }
-
 }
-
 </script>
 
 <style >
+
 </style>
