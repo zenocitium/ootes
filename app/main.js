@@ -9,6 +9,9 @@ require('./scss/main.scss')
 // Icons
 require('./icons.font')
 
+// Filters
+require('./filters')
+
 // components
 let point = require('./components/point.vue')
 Vue.component('point', point)

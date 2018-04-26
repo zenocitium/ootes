@@ -62,6 +62,7 @@ module.exports = {
       "window.jQuery": "jquery",
       "Tether": 'tether'
     }),
+    new webpack.HotModuleReplacementPlugin()
   ],
 
   devServer: {

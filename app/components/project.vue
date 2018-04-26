@@ -18,10 +18,9 @@
             </div>
             <div class="section">
                 <div class="container">
-                    <h3 class="project-title">{{ project.client }} <small class="text-muted">{{ project.type }}</small></h3>
-                    <p>{{ project.text }}</p>
+                    <h3 class="project-title">{{ project.client }} <a class="link" v-bind:href="project.address" target="_blank"><small class="text-muted">{{ project.type }}</small></a></h3>
+                    <p v-html="project.text"></p>
                     <p><div class="badge badge-primary" v-for="technique in project.techniques">{{ technique }}</div></p>
-                    <p v-if="project.address">Bezoek het project op <a class="link" v-bind:href="project.address" target="_blank">{{ project.address }}</a></p>
                 </div>
             </div>
             <div class="section bg-gray-lightest">

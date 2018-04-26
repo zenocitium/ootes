@@ -101,8 +101,39 @@ export default class ProjectsResource {
           file: 'contact.png',
           direction: 'landscape'
         }]
+      },
 
-      }
+      {
+        client: 'Sensire',
+        url: 'sensire',
+        name: 'Sensire',
+        img: 'img/sensire.svg',
+        address: 'http://sensire.nl',
+        techniques: [ 'Wordpress', 'SCSS', 'Node' ],
+        text: 'Sensire had een nieuwe frisse website nodig. Daarom bedachten we samen met de jongens van <a href="http://www.launderette.nl/">Laundrette</a> een nieuwe beeldtaal voor de website door goed te luisteren naar Sensire.<br/> Door een iteratief proces aan te houden konden we bijsturen waar nodig waren we allemaal trots op het resultaat.',
+        type: 'Website',
+        screenshots: [{
+          url: 'img/sensire/2.png',
+          file: '2.png',
+          direction: 'landscape'
+        },{
+          url: 'img/sensire/1.png',
+          file: '1.png',
+          direction: 'landscape'
+        },{
+          url: 'img/sensire/3.png',
+          file: '3.png',
+          direction: 'landscape'
+        },{
+          url: 'img/sensire/4.png',
+          file: '4.png',
+          direction: 'landscape'
+        },{
+          url: 'img/sensire/5.png',
+          file: '5.png',
+          direction: 'landscape'
+        }]
+      },
     ]
     return projects
   }

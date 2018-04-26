@@ -19,7 +19,6 @@
       <div class="container">
 
         <div class="row cards-holder">
-
           <div class="col-4" v-for="project in projects">
 
             <div class="card project">
@@ -29,8 +28,8 @@
               </div>
 
               <div class="card-block">
-                <h4 class="card-title">{{ project.name }}</h4>
-                <p class="card-text">{{ project.text }}</p>
+                <!-- <h4 class="card-title">{{ project.name }}</h4> -->
+                <p class="card-text">{{ project.text | truncate(140, '...') }}</p>
                 <a v-bind:href="'#/project/' + project.url">
                   <button type="button" class="btn btn-outline-secondary">Lees meer</button>
                 </a>
