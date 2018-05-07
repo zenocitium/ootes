@@ -30,8 +30,8 @@ $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
 $brand-primary-transparent: transparentize($brand-primary, .2);
-
 $brand-primary-light: lighten($brand-primary, 20%);
+$brand-primary-lighter: lighten($brand-primary, 30%);
 $brand-primary-dark: darken($brand-primary, 20%);
 
 $break-sm: 600px;
@@ -41,6 +41,7 @@ $break-xl: 1700px;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;
+$font-size-xl:   2.25rem !default;
 $font-size-sm:   .875rem !default;
 
 $h1-font-size: 2.5rem !default;

@@ -13,26 +13,28 @@ require('./icons.font')
 require('./filters')
 
 // components
-let point = require('./components/point.vue')
-Vue.component('point', point)
 
-let navbar = require('./components/navbar.vue')
+import navbar from './components/navbar.vue'
 Vue.component('navbar', navbar)
 
-let step = require('./components/step.vue')
+import step from './components/step.vue'
 Vue.component('step', step)
 
-let particles = require('./components/particles.vue')
-Vue.component('particles', particles)
-
-let map = require('./components/map.vue')
+import map from './components/map.vue'
 Vue.component('location', map)
 
-let about = require('./components/about.vue')
+import about from './components/about.vue'
 Vue.component('about', about)
 
-let projectImage = require('./components/project-image.vue')
+import projectImage from './components/project-image.vue'
 Vue.component('project-image', projectImage)
+
+import particles from './components/particles.vue'
+Vue.component('particles', particles);
+
+import point from './components/point.vue'
+Vue.component('point', point)
+
 
 // Import zeh router
 import router from './router'
@@ -40,3 +42,4 @@ import router from './router'
 const app = new Vue({
   router
 }).$mount('#app')
+

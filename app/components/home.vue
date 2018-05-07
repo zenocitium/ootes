@@ -130,7 +130,6 @@
 import ProjectsResource from "../services/projectsResource.js";
 const restProjectsResource = new ProjectsResource();
 
-let particles = require("particles.js");
 
 export default {
   name: "home",

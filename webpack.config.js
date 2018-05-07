@@ -1,7 +1,11 @@
 var webpack = require('webpack');
 var path = require('path');
+const { VueLoaderPlugin } = require('vue-loader')
+
 
 module.exports = {
+
+  mode: 'development',
 
   entry: './app/main.js',
 
@@ -48,7 +52,7 @@ module.exports = {
         },{
           loader: "css-loader"
         },{
-          loader: "fontgen-loader"
+          loader: "webfonts-loader"
         }]
 
       }
@@ -56,13 +60,7 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.ProvidePlugin({
-      // $: "jquery",
-      // jQuery: "jquery",
-      // "window.jQuery": "jquery",
-      // "Tether": 'tether'
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    new VueLoaderPlugin()
   ],
 
   devServer: {

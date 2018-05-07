@@ -5,13 +5,14 @@
 
 <script>
 export default {
-  name: 'step',
   mounted: function() {
-    initParticles()
+    initParticles() 
   }
 }
 
 function initParticles(){
+  console.log('test');
+  
   let config = {
     "particles": {
       "number": {
