@@ -3,6 +3,8 @@
     padding: 1rem 1rem 1.5rem;
     width: 100%;
     text-align: center;
+    margin: 0 0 2rem 0;
+    width: 80%;
     .card-header{
         border-bottom: 1px solid $brand-primary;
     }
@@ -15,8 +17,8 @@
             font-weight: 500;
         }
     }
-    @media (max-width: $break-sm)  {
-        margin: 0 0 1rem 0;
+    @media (min-width: $break-sm)  {
+        width: 100%;
     }
 }
 

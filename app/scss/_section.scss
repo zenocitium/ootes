@@ -1,7 +1,10 @@
 .section{
-  padding: 5rem 0;
+  padding: 3rem 0;
   width: 100%;
   border-bottom: 1px solid $gray-lighter;
+  @media (min-width: $break-sm)  {
+    padding: 5rem 0;
+  }
   &.section--smaller{
       padding: 3.5rem 0;
   }

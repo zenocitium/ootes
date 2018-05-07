@@ -6,9 +6,20 @@
           flex-direction: row;
         }
         .story{
-            padding: 0 4rem;
+            padding: 0rem;
+            @media (min-width: $break-sm)  {
+                padding: 0 4rem;
+            }
             h3:first-child{
                 margin: 0;
+            }
+            .story__photo{
+                width: 50%;
+                display: inline;
+                background: yellow;
+                @media (min-width: $break-sm)  {
+                    display: none;
+                }
             }
         }
         ul{
@@ -25,7 +36,7 @@
             }
         }
         p, li{
-            font-size: $font-size-lg
+            font-size: $font-size-lg;
         }
         hr{
             margin: 2rem 0 1rem;
@@ -33,26 +44,39 @@
     }
     .picture{
         img{
-            background: $brand-primary-light;
-            width: 100%;
+            display: none;
         }
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
+        @media (min-width: $break-sm)  {
+            img{
+                display: block;
+                background: $brand-primary-light;
+                width: 100%;
+            }
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+          }
     }
     .company-info{
         background: $brand-primary-light;
-        margin: 4rem 0 0 0;
+        margin: 0;
         padding: $gutter-small;
         h1, h2, h3{
             margin: 0 0 1rem;
         }
         a{
-            // color: white;\
             color: $gray;
         }
-        width: calc(100% - 3rem * 2);
-        padding: 3rem;
+        width: calc(100% - 1.5rem * 2);
+        padding: 1.5rem;
+        p{
+            margin: 0;
+        }
+        @media (min-width: $break-sm)  {
+            margin: 4rem 0 0 0;
+            padding: 3rem;
+            width: calc(100% - 3rem * 2);
+        }
     }
 }
