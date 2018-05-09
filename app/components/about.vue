@@ -35,7 +35,7 @@
                         <div class="col-8 story">
                             <h1>Sociale uitvinder</h1>
                             <!-- <img src="img/pixel-me-nobg.png" class="story__photo" alt="Tom"> -->
-                            <p>Hoi, ik ben Tom, aangenaam. Ootes Web is mijn bureau. Na anderhalf jaar als programmeur in vaste dienst te hebben gewerkt besloot ik te vertrekken. Ik nam de trein van Rusland naar Mongolië en daarna China. Na een aantal omzwervingen kwam ik weer terug in Nederland. Toen mijn reis er op zat besloot ik het avontuurlijke element in mijn dagelijkse leven te bakkken en voor mezelf te beginnen. Sindsdien heb ik met een hoop plezier als full-stack programmeur aan verschillende projecten gewerkt. </p>
+                            <p>Hoi, ik ben Tom, aangenaam. Ootes Web is mijn bureau. Na anderhalf jaar als programmeur in vaste dienst te hebben gewerkt besloot ik te vertrekken. Ik nam de trein van Rusland naar Mongolië en daarna China. Na een aantal omzwervingen kwam ik weer terug in Nederland. Toen mijn reis er op zat besloot ik het avontuurlijke element in mijn dagelijkse leven te bakken en voor mezelf te beginnen. Sindsdien heb ik met een hoop plezier als full-stack programmeur aan verschillende projecten gewerkt. </p>
                             <p>Ik ben sterk in de volgende facetten van webprojecten:</p>
                             <ul>
                                 <li>Advies in gebruiksvriendelijkheid/ stijl</li>
