@@ -32,6 +32,7 @@
         align-items: center;
         width: 100%;
         .heading{
+          text-align: center;
           margin: 0;
         }
         .icon{
@@ -78,7 +79,20 @@
         h3{
           margin: 0;
         }
+       
       }
+
+      .flex-center{
+        
+        align-items: flex-end;
+        margin-bottom: $gutter-small;
+
+        @media only screen and (min-width: $break-sm)  {
+          align-content: center;
+        }
+
+      }
+
     }
   }
 

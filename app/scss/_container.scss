@@ -1,12 +1,12 @@
 .container{
-  width: 75vw;
+  width: 70rem;
   margin: 0 auto;
   position: relative;
   @media(max-width: $break-sm){
     width: calc( 100% - 2rem );
   }
   &.container--small{
-    width: 50vw;
+    width: 55rem;
     @media(max-width: $break-sm){
       width: calc( 100% - 2rem );
     }

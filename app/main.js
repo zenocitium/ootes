@@ -35,6 +35,8 @@ Vue.component('particles', particles);
 import point from './components/point.vue'
 Vue.component('point', point)
 
+import card from './components/card.vue'
+Vue.component('card', card)
 
 // Import zeh router
 import router from './router'

@@ -9,7 +9,7 @@
               <span class="icon icon-greenhouse"></span>
               <h2 class="heading">Wij bouwen web oplossingen.</h2>
               <a href="#/about">
-                <button type="button" class="btn btn--light">Bel/mail Tom</button>
+                <button type="button" class="btn btn--white">Bel/mail Tom</button>
               </a>
             </span>
             <div class="bottom">
@@ -24,23 +24,7 @@
       <div class="container">
         <h2 class="section--heading flex-center">Recente projecten</h2>
         <div class="row cards-holder">
-          <div class="col-3" v-for="project in sortByDate(projects)" :key="project">
-            
-            <div class="card project">
-              <div class="card-header vertical-center image">
-                <img class="card-img-top img-fluid" :src= "project.img" :alt="project.project">
-              </div>
-
-              <div class="card-block">
-                <!-- <h4 class="card-title">{{ project.name }}</h4> -->
-                <p class="card-text">{{ project.text | truncate(140, '...') }}</p>
-                <a v-bind:href="'#/project/' + project.url">
-                  <button type="button" class="btn btn-outline-secondary btn--white">Lees meer</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
+          <card v-for="project in sortByDate(projects)" :key="project" :title="project.type" :url="project.url" :text="project.text" :image="project.img"  />
         </div>
         <div class="flex-center gutter-top-small">
           <a v-bind:href="'#/projects/'">

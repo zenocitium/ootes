@@ -14,18 +14,29 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="section">
+            
+
+            <div class="section project-content">
                 <div class="container container--small">
-                    <h3 class="project-title">{{ project.client }} <a class="link" v-bind:href="project.address" target="_blank"><small class="text-muted">{{ project.type }}</small></a></h3>
-                    <p v-html="project.text"></p>
-                    <div>
-                        <!-- <div class="badge badge-primary" v-for="technique in project.techniques" :key="technique">{{ technique }}</div> -->
+            
+                    <div class="project-logo flex flex-center">
+                        <img :src="project.img" alt="">
                     </div>
+            
+                    <h3 class="project-title">{{ project.client }}
+                        <a class="link" v-if="project.address" v-bind:href="project.address" target="_blank"><small class="text-muted">{{ project.type }}</small></a>
+                        <small class="text-muted" v-else>{{ project.type }}</small>
+                    </h3>
+
+                    <p class="project-text" v-html="project.text"></p>
+                    <div>
+                        <div class="badge badge-primary" v-for="technique in project.techniques" :key="technique">{{ technique }}</div>
+                    </div>
+
                 </div>
             </div>
-            <div class="section bg-gray-lightest">
+            <div v-if="project.screenshots" class="section bg-gray-lightest">
                 <div class="container">
                     <div class="screenshots">
                         <project-image v-for="screenshot in project.screenshots" :file="screenshot.file" :direction="screenshot.direction" :url="screenshot.url" :key="screenshot.file"></project-image>

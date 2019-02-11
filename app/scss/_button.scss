@@ -1,14 +1,14 @@
 .btn {
 	// border-radius: 3px;
 	padding: 1rem 1.5rem;
-	background: #38e6a4;
+	background: $brand-primary-light;
 	cursor: pointer;
 	border: 0;
 	letter-spacing: 1px;
 	font-size: 0.875rem;
 	box-shadow: 3px 3px 0 lighten($brand-primary, 25%);
 	color: white;
-	border: 1px solid #38e6a4;
+	border: 1px solid $brand-primary;
 	padding: 1rem 2rem;
 
 	&.btn--light{

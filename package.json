@@ -33,7 +33,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
-    "start:dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --hot",
     "build": "webpack -p"
   },
   "author": "Tom Ootes",

@@ -14,7 +14,7 @@ export default {
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v9',
-            center: [5.1182397, 52.0897913],
+            center: [5.1182397, 52.0756886],
             zoom: 13
         });
 
@@ -24,11 +24,11 @@ export default {
                 type: 'Feature',
                 geometry: {
                     type: 'Point',
-                    coordinates: [5.1182397, 52.0897913]
+                    coordinates: [5.1182397, 52.0756886]
                 },
                 properties: {
                     title: 'Ootes Web',
-                    description: 'Mariaplaats 4, Utrecht'
+                    description: 'Vechtclub XL (G2.4) <br/> Europalaan 2B <br/> 3526 KS Utrecht'
                 }
             }]
         };

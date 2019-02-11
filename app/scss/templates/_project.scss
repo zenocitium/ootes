@@ -1,9 +1,36 @@
 #project{
+    .project-logo{
+        img {
+            
+            width: 35rem;
+            max-height: 10rem;
+            max-width: 100%;
+           
+            @media only screen and (min-width: $break-sm)  {
+                max-height: 25rem;
+            }
+        }
+        
+        @media only screen and (min-width: $break-sm)  {
+            margin-bottom: $gutter-large;
+        }
+
+    }
+    .project-content{
+        
+        @media only screen and (min-width: $break-sm)  {
+            padding-bottom: 7rem;
+        }
+
+    }
     .project-title{
         font-weight: 500;
         small{
             font-weight: 300;
         }
+    }
+    .project-text{
+        margin-bottom: $gutter-small;
     }
     .screenshots{
         display: flex;

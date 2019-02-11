@@ -22,7 +22,9 @@ $gray-lightest:             #f7f7f9 !default;
 $transparent-white: transparentize(white, .6);
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             #38e6a4 !default;
+// $brand-primary:            lighten( #38e6a4, 5%) !default;
+$brand-primary: turquoise;
+$brand-primary: #0DE5A8;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
@@ -30,7 +32,7 @@ $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
 $brand-primary-transparent: transparentize($brand-primary, .2);
-$brand-primary-light: lighten($brand-primary, 20%);
+$brand-primary-light: lighten($brand-primary, 10%);
 $brand-primary-lighter: lighten($brand-primary, 30%);
 $brand-primary-dark: darken($brand-primary, 20%);
 
@@ -39,5 +41,7 @@ $break-md: 900px;
 $break-lg: 1200px;
 $break-xl: 1700px;
 
+$gutter-large: 5rem;
 $gutter: 3rem;
 $gutter-small: 2rem;
+$gutter-xs: 1rem;
