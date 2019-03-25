@@ -1,13 +1,10 @@
 .card {
-    // background: lighten($brand-primary, 28%);
-    // padding: 1rem 1rem 1.5rem;
-    width: 100%;
+
     text-align: center;
-    margin-bottom: 0;
+    width: calc(100% - (2 * #{$gutter}) );
+    margin: 0 auto $gutter;
     display: flex;
     flex-direction: column;
-
-    // justify-content: center;
     align-items: center;
     border: 1px solid $brand-primary;
     padding: .5rem 0 1.5rem;
@@ -27,7 +24,7 @@
             }
         }
         .card-link{
-            color: $brand-primary-dark;
+            color: $brand-primary-darker;
         }
     }
 
@@ -71,7 +68,7 @@
 
     &-link {
         width: 100%;
-        color: $brand-primary;
+        color: $brand-primary-dark;
         font-size: $font-size-sm;
 
         // &:hover{
@@ -87,11 +84,19 @@
 }
 
 .cards-holder {
-    
-    grid-gap: 3rem;
+
+    display: flex;
+    flex-direction: column;
 
     @media only screen and (min-width: $break-sm)  {
         display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (min-width: $break-lg)  {
+        display: grid;
+        grid-gap: 3rem;
         grid-template-columns: repeat(4, 1fr);
     }
 

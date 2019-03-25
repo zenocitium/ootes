@@ -1,14 +1,33 @@
 .container{
-  width: 70rem;
+
+  width: calc( 100% - 2rem );
   margin: 0 auto;
   position: relative;
-  @media(max-width: $break-sm){
-    width: calc( 100% - 2rem );
+
+  @media(min-width: $break-sm){  
+    width: calc( 100% - ( 2* #{$gutter-large}) );
   }
+
+  @media(min-width: $break-md){  
+    width: 50rem;
+  }
+
+  @media(min-width: $break-lg){  
+    width: 70rem;
+  }
+
   &.container--small{
-    width: 55rem;
-    @media(max-width: $break-sm){
+    width: calc( 100% - 2rem );
+    @media(min-width: $break-sm){  
       width: calc( 100% - 2rem );
+    }
+  
+    @media(min-width: $break-md){  
+      width: 30rem;
+    }
+  
+    @media(min-width: $break-lg){  
+      width: 50rem;
     }
   }
 }

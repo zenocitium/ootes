@@ -34,7 +34,8 @@ $brand-inverse:             $gray-dark !default;
 $brand-primary-transparent: transparentize($brand-primary, .2);
 $brand-primary-light: lighten($brand-primary, 10%);
 $brand-primary-lighter: lighten($brand-primary, 30%);
-$brand-primary-dark: darken($brand-primary, 20%);
+$brand-primary-dark: darken($brand-primary, 15%);
+$brand-primary-darker: darken($brand-primary, 30%);
 
 $break-sm: 600px;
 $break-md: 900px;
