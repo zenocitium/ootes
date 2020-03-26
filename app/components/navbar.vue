@@ -3,8 +3,8 @@
   <nav class="navbar top">
     <div class="container">
       <div class="navbar-content">
-        <a class="logo" href="#">
-          <span><b>Ootes</b> Web</span>
+        <a class="logo" href="/">
+          <span><b>Tom</b> Ootes</span>
         </a>
         <ul class="navbar-nav">
           <li class="nav-item">

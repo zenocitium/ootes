@@ -7,9 +7,9 @@
         <div class="container">
             <span class="intro-text">
               <span class="icon icon-greenhouse"></span>
-              <h2 class="heading">Wij bouwen web oplossingen.</h2>
+              <h2 class="heading">Ik ben voor onbepaalde tijd met sabbatical.</h2>
               <a href="#/about">
-                <button type="button" class="btn btn--white">Bel/mail Tom</button>
+                <button type="button" class="btn btn--white">Samen muziek maken misschien?</button>
               </a>
             </span>
             <div class="bottom">
@@ -22,14 +22,14 @@
 
     <div class="section point-section ">
       <div class="container">
-        <h2 class="section--heading flex-center">Recente projecten</h2>
+        <h2 class="section--heading flex-center">Opdrachtgevers</h2>
         <div class="row cards-holder">
           <card v-for="project in sortByDate(projects)" :key="project" :title="project.type" :url="project.url" :text="project.text" :image="project.img"  />
         </div>
         <div class="flex-center gutter-top-small">
           <a v-bind:href="'#/projects/'">
             <button type="button" class="btn btn-outline-secondary ">Alle projecten</button>
-          </a>
+          </a>∂ç
         </div>
       </div>
     </div>

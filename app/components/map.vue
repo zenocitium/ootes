@@ -27,7 +27,7 @@ export default {
                     coordinates: [5.1182397, 52.0756886]
                 },
                 properties: {
-                    title: 'Ootes Web',
+                    title: 'Tom Ootes',
                     description: 'Vechtclub XL (G2.4) <br/> Europalaan 2B <br/> 3526 KS Utrecht'
                 }
             }]

@@ -3,15 +3,49 @@ export default class ProjectsResource {
   getProjects(){
     let projects = [
       {
+        client: 'Volt Europa',
+        url: 'volt_europa',
+        date: '2020-01-10',
+        name: 'Front-end lead - Volt Europa ',
+        img: 'img/volt-europa.svg',
+        address: 'https://volteuropa.org',
+        techniques: [ 'Nuxt','JS','SCSS'],
+        text: `In de aanloop naar de Europese parlementsverkiezingen van 2019 heb ik een nieuw designsysteem gebouwd voor de verschillende websites van Volt.
+        Daarna nam ik de rol aan van front-end lead waarin ik (mede) verwantwoordelijk was voor technische keuzes en advies binnen front-end projecten van Volt.`,
+        type: 'Website'
+      },
+      {
         client: 'Summer School Utrecht',
         url: 'utrechtsummerschool',
-        date: '2019-02-02',
+        date: '2019-12-02',
         name: 'Ontwikkeling platform',
         img: 'img/uss_logo.svg',
         address: 'https://utrechtsummerschool.nl',
         techniques: [ 'PHP', 'Symfony', 'Webpack','JS','SCSS'],
         text: 'Summer School Utrecht is een samenwerking van Universiteit Utrecht, Hogeschool Utrecht en de Hogere School voor de Kunsten Utrecht. Tijdens de zomermaanden bieden zij gezamenlijk cursussen aan voor (uitwisselings)studenten en professionals. Wij verzorgen de doorontwikkeling van het platform van Summer School Utrecht dat er voor zorgt dat studenten zich kunnen inschrijven, docenten een overzicht hebben van de vakken die zij geven en de administratie inschrijvingen en betalingen kan verwerken.',
         type: 'Platform'
+      },
+      {
+        client: 'Gemeente Amsterdam',
+        url: 'gemeente_amsterdam',
+        date: '2020-01-31',
+        name: 'Full Stack Developer - Kies je kraam ',
+        img: 'img/gemeente-amsterdam.svg',
+        address: 'https://www.amsterdam.nl/ondernemen/markt-straathandel/digitaal-indelen/',
+        techniques: [ 'Typescript', 'NodeJS', 'React','JS','SCSS','Postgres'],
+        partners: [
+          {
+            "name":"TiltShift",
+            "url":"http://www.tiltshift.nl"
+          }
+        ],
+        text: `In opdracht van <a target="_blank" href="http://www.tiltshift.nl/">TiltShift</a> bouwde ik mee aan een webapp voor de markten in Amsterdam.
+        Dagelijks tekenden in Amsterdam marktmeesters de plattegrond van elke markt in en kreeg iedereen met de hand een plekje toegewezen.
+        Vanwege organisatorische en logistieke redenen was er vraag naar een digitale oplossing voor het indelen van de markt.
+        In dit traject bouwden we aan een versie applicatie die kon proefdraaien in Amsterdam west op Plein 40 - 45.<br><br>
+        Ik was als full stack developer verantwoordelijk voor ontwikkeling aan zowel de front-end als de back-end. Als voertaal gebruikten we Typescript en als database Postgres.
+        Terwijl <a target="_blank" href="https://github.com/tjoekbezoer">Daan</a> de berekening schreef voor de indeling, zorgde ik ervoor dat het dashboard en alle andere plekken met gebruikersinteractie werden uitgewerkt.`,
+        type: 'Webapp'
       },
       {
         client: 'Cello Festival Zutphen',
@@ -29,7 +63,7 @@ export default class ProjectsResource {
         url: 'crossover',
         date: '2017-03-02',
         name: 'Ontwikkeling web-app',
-        img: 'img/crossover.png', 
+        img: 'img/crossover.png',
         techniques: [ 'Angular', 'SCSS', 'Node','Express','MongoDB'],
         text: 'Voor Project CrossOver bouwden we een app om procesveranderingen per afdeling inzichtelijk te maken.',
         type: 'Webapp en backend',
@@ -58,7 +92,7 @@ export default class ProjectsResource {
       {
         client: 'Groenlinks',
         url: 'glapp',
-        date: '2017-03-05',
+        date: '2019-12-05',
         name: 'Ontwikkeling web-app',
         img: 'img/groenlinks.png',
         address: 'https://glapp.nl',
@@ -131,7 +165,7 @@ export default class ProjectsResource {
       {
         client: 'Sensire',
         url: 'sensire',
-        date: '2018-01-05',
+        date: '2019-11-05',
         name: 'Ontwikkeling website',
         img: 'img/sensire.svg',
         address: 'http://sensire.nl',

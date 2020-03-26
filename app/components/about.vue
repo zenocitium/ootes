@@ -22,7 +22,7 @@
 
 
         <div class="container">
-            
+
           <div class="flex flex-space-between content">
 
             <div class="col-8 picture">
@@ -49,26 +49,21 @@
               <p><b>IBAN</b> NL06ASNB0708907997</p>
             </div>
 
-             
           <div class="story">
                 <h1>Sociale uitvinder, web developer</h1>
                 <!-- <img src="img/pixel-me-nobg.png" class="story__photo" alt="Tom"> -->
                 <p>Hoi, ik ben Tom, aangenaam. Ootes Web is mijn bureau. Na anderhalf jaar als programmeur in vaste dienst te hebben gewerkt besloot ik te vertrekken. Ik nam de trein van Rusland naar Mongolië en daarna China. Na een aantal omzwervingen kwam ik weer terug in Nederland. Toen mijn reis er op zat besloot ik het avontuurlijke element in mijn dagelijkse leven te bakken en voor mezelf te beginnen. Sindsdien heb ik met een hoop plezier als full-stack programmeur aan verschillende projecten gewerkt. </p>
                 <p>Ik ben sterk in de volgende facetten van webprojecten:</p>
                 <ul>
-                  <li>Advies in gebruiksvriendelijkheid/ stijl</li>
-                  <li>Ontwikkeling, technisch overzicht</li>
-                  <li>Strategie</li>
+                  <li>Modulair opzetten van styleguides mbv components</li>
+                  <li>Code-technisch overzicht, technisch advies</li>
+                  <li>Bewaken van esthetiek en gebruiksvriendelijkheid</li>
                 </ul>
+                <p>Verder ben ik erg geïnteresseerd in het meebouwen aan een internet waarin we <b>machtsblokken oplossen</b> door het bouwen van <b>open software</b> op basis van publieke waarden.</p>
                 <p>De mogelijkheden bespreken? Ik ben altijd in voor een bakkie koffie.</p>
               </div>
-      
-            
           </div>
-
         </div>
-
-
       </div>
     </main>
 
