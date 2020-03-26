@@ -29,7 +29,7 @@
         <div class="flex-center gutter-top-small">
           <a v-bind:href="'#/projects/'">
             <button type="button" class="btn btn-outline-secondary ">Alle projecten</button>
-          </a>∂ç
+          </a>
         </div>
       </div>
     </div>
