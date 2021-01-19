@@ -7,9 +7,9 @@
         <div class="container">
             <span class="intro-text">
               <span class="icon icon-greenhouse"></span>
-              <h2 class="heading">Ik ben voor onbepaalde tijd met sabbatical.</h2>
+              <h2 class="heading">Web developer met oog voor het grotere plaatje</h2>
               <a href="#/about">
-                <button type="button" class="btn btn--white">Samen muziek maken misschien?</button>
+                <button type="button" class="btn btn--white">Samen werken aan het web?</button>
               </a>
             </span>
             <div class="bottom">
@@ -36,7 +36,7 @@
 
         <div class="section point-section bg-gray-lightest">
       <div class="container">
-        <h2 class="section--heading flex-center">Onze oplossingen zijn</h2>
+        <h2 class="section--heading flex-center">Mijn sterke punten</h2>
         <div class="row points">
           <div class="col-4" v-for="point in points" :key="point.title">
             <point :title="point.title" :icon="point.icon" :text="point.text"></point>
@@ -126,22 +126,22 @@ export default {
     return {
       points: [
         {
-          title: "Solide",
+          title: "Kwaliteit",
           icon: "icon icon-cog",
           text:
-            "Technisch goed opgezette projecten zorgen ervoor dat er makkelijk veranderingen doorgevoerd kunnen worden en kwaliteit gewaardborgd blijft. Zo wordt het project zo agile als het maar zijn kan."
+            "De balans zoeken tussen een inzichtelijke codebase en het opleveren van functionaliteit, dat kan ik vrij aardig. Agile maar met oog voor een duurzaam product waaraan doorontwikkeld kan worden."
         },
         {
           title: "Gebruiksvriendelijk",
           icon: "icon icon-usability",
           text:
-            "Door onze praktijkervaring weten we welke regels er nageleeft moeten worden om een app gebruiksvriendelijk maken. Daarnaast zorgt iteratief werken ervoor dat we het product samen kunnen bijschaven."
+            "Door mijn praktijkervaring weet ik welke regels er nageleeft moeten worden om een app gebruiksvriendelijk te houden."
         },
         {
-          title: "Prachtig",
+          title: "Estethiek",
           icon: "icon icon-design-mug",
           text:
-            "Om een project te laten slagen is het belangrijk dat de stakeholders het resultaat een aantrekkelijk product vinden. Wij automatiseren design zodat het eindresultaat mooi en overzichtelijk is."
+            "Om een project te laten slagen is het belangrijk dat de stakeholders het resultaat een aantrekkelijk product vinden. Ik ben goed in het opzetten van een designsysteem zodat het eindresultaat mooi en overzichtelijk is."
         }
       ],
       steps: [
